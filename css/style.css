@@ -1,0 +1,442 @@
+/* ЗАГАЛЬНІ СТИЛІ  */
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* h1,
+h2,
+h3,
+p {
+    margin: 0;
+} */
+
+.container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    background-color: pink;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* СТИЛІ ДЛЯ ХЕДЕРУ  */
+.header {
+    background-color: #030718;
+}
+
+.header-mob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link {
+    display: block;
+}
+
+.burger-open {
+    display: flex;
+
+}
+
+/* СТИЛІ ДЛЯ ГЕРОЯ */
+.hero-title {
+    font-size: 35px;
+
+    line-height: 1.25;
+    letter-spacing: -1.4px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.hero-text {
+    line-height: 1.25;
+
+    color: #E7F7F8;
+}
+
+.input-email {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 100%;
+
+    border-radius: 4px;
+    border: none;
+    background-color: #201A4F;
+}
+
+.input-email::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42;
+    letter-spacing: -0.14px;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-form>.button-form {
+    padding: 11px 24px;
+
+    min-width: 102px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+
+    color: #030718;
+
+    border-radius: 3px;
+    border: 1px solid #57E1FF;
+    background-color: #57E1FF;
+    box-shadow: 0px 0px 4px 0px #57E1FF;
+}
+
+.after-form {
+    font-size: 14px;
+    line-height: 1.42;
+
+    color: #FFFFFF;
+}
+
+/* СТИЛІ ДЛЯ ПРИБУТКУ */
+.title {
+    font-size: 28px;
+    line-height: 1.28;
+    letter-spacing: -1.12px;
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.profit-text {
+    font-size: 14px;
+    line-height: 1.42;
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.profit-date {
+    letter-spacing: -0.56px;
+
+}
+
+.profit .amount {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.7px;
+
+    text-transform: uppercase;
+
+    color: #6A54FF;
+}
+
+/* СТИЛІ ДЛЯ "МИНУЛИХ УГОД" */
+.trade-title {
+    color: #FFFFFF;
+}
+
+.trade-status {
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: -0.56px;
+
+    color: #35FF9E;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.8px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.trade-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+
+    color: #FFFFFF;
+}
+
+.trade-profit {
+    text-transform: uppercase;
+}
+
+.trade-percent {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+
+    text-transform: uppercase;
+
+    color: #35FF9E;
+}
+
+/* СТИЛІ ДЛЯ "ПРО КОМПАНІЮ" */
+.about .title {
+    color: #030718;
+}
+
+.about .about-form {
+    padding: 16px;
+
+    border-radius: 4px;
+    background-color: #6A54FF;
+}
+
+.about-form .form-text {
+    margin-bottom: 20px;
+    display: block;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.8px;
+
+    color: #FFFFFF;
+}
+
+.about .input-about {
+    margin-bottom: 8px;
+
+    padding-left: 17px;
+    padding-right: 0;
+
+    background-color: #000000;
+}
+
+.about-form .button-form {
+    padding: 16px 103px;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    color: #030718;
+
+    border: none;
+    border-radius: 3px;
+    background: #57E1FF;
+    box-shadow: 0px 0px 4px 0px #57E1FF;
+}
+
+/* СТИЛІ ДЛЯ "ТАРИФИ" */
+.tarrifs-title {
+    color: #FFFFFF;
+}
+
+.buttons-wrapper {
+    position: relative;
+}
+
+.button-basic {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 47px;
+    min-width: 343px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+
+    text-align: end;
+
+    border-radius: 4px;
+    background-color: #6A54FF;
+    border: none;
+    color: #57E1FF;
+}
+
+.button-basic.button-spot {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    min-width: 167px;
+
+    padding: 10px 60px;
+    margin-left: 4px;
+    font-weight: 700;
+
+    transform: translateY(-50%);
+
+    background-color: #57E1FF;
+    color: #000000;
+}
+
+.tariffs-text {
+    line-height: 1.25;
+
+    color: #FFFFFF;
+}
+
+.tariffs-price {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+
+    color: #FFFFFF;
+}
+
+.tariffs-discount {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+
+    color: #35FF9E;
+}
+
+.tariffs-button {
+    padding: 6px 5px 6px 8px;
+    min-width: 128px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    line-height: 1.25;
+
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.20);
+    color: #FFFFFF;
+}
+
+.tariffs-link {
+    min-width: 310px;
+    display: block;
+    text-align: center;
+
+    border-radius: 3px;
+    background-color: #57E1FF;
+    box-shadow: 0px 0px 4px 0px #57E1FF;
+}
+
+.tariffs-link>.text-try {
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    color: #030718;
+}
+
+.tariffs-link>.text-free {
+    font-size: 12px;
+    line-height: 1.33;
+
+    color: #030718;
+}
+
+/* СТИЛІ ДЛЯ " ПОШИРЕНІ ЗАПИТАННЯ" */
+.questions-title {
+    color: #030718;
+}
+
+.questions-item {
+    padding: 16px;
+
+    border-radius: 4px;
+    background-color: #6A54FF;
+}
+
+.questions-item:not(:first-child) {
+    background-color: #EAEFF0;
+}
+
+.common-questions .title-color {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-questions .sub-title {
+    text-transform: none;
+
+    color: #FFFFFF;
+}
+
+.common-questions .text {
+    color: #FFFFFF;
+}
+
+.sub-title.dark-color {
+    max-width: 271px;
+
+    color: #030718;
+}
+
+.common-questions .questions-button {
+    stroke: #030718;
+}
+
+/* СТИЛІ ДЯЛ ФУТЕРА */
+.footer-text {
+    font-size: 14px;
+    line-height: 1.42;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 1.42;
+
+    color: #FFFFFF;
+}

@@ -1,220 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TradeBlade</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Хедер -->
-    <header>
+    <header class="header">
+      <div class="container header-mob">
         <nav>
-            <a href="./index.html">
-                <svg>
-                    <use href=""></use>
-                </svg>
-            </a>
-            <ul>
-                <li><a href="">цифри</a></li>
-                <li><a href="">угоди онлайн</a></li>
-                <li><a href="">про компанію</a></li>
-                <li><a href="">як почати</a></li>
-                <li><a href="">тарифи</a></li>
-                <li><a href="">відгуки</a></li>
-                <li><a href="">FAQ</a></li>
-            </ul>
+          <a href="" class="header-link">
+            <svg class="header-logo" width="107" height="52">
+              <use href="./img/sprite.svg#logo-header-mob"></use>
+            </svg>
+          </a>
         </nav>
-        <ul>
-            <li><button type="button">вхід</button></li>
-            <li><button type="button">реєстрація</button></li>
-        </ul>
+        <button type="button" class="button burger-open">
+          <svg width="32" height="32" aria-label="перемикач мобільного меню">
+            <use href="./img/sprite.svg#burger-open"></use>
+            <use href="./img/sprite.svg#burger-close"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
-        <!-- Герой -->
-        <section class="hero">
-            <h1>моментально Копіюй угоди профі трейдерів</h1>
-            <p>
-                Почни копіювати угоди з успішною командою професійних трейдерів у
-                автоматичний режим.
-            </p>
-            <form name="form_hero">
-                <input type="email" name="email" />
-                <button type="submit">почати</button>
-            </form>
-            <p>5 днів безкоштовного користування</p>
-        </section>
-        <!-- Прибуток  -->
-        <section class="profit">
-            <h2>Цифри</h2>
-            <p>Вересень 2022</p>
-
-            <p>Торгового прибутку</p>
-            <p>2756%</p>
-
-            <p>ф'ючерсних та спотових угод</p>
-            <p>67</p>
-
-            <p>прибуток передплатників</p>
-            <p>375000</p>
-        </section>
-        <!-- Минулі угоди -->
-        <section class="past-trades">
-            <h2>минулі угоди</h2>
-            <p>Онлайн</p>
-            <ul>
-                <li>
-                    <h3>NEAR/USDT</h3>
-                    <p>SPOT · 1 хв. тому</p>
-                    <p>Прибуток</p>
-                    <p>58.6206%</p>
-                    <p>Ціль 4</p>
-                    <p>Дата входу 06.10.2022</p>
-                </li>
-                <li>
-                    <h3>BTC/USDT</h3>
-                    <p>SPOT · 1 хв. тому</p>
-                    <p>Прибуток</p>
-                    <p>6.02%</p>
-                    <p>Ціль 3</p>
-                    <p>Дата входу 06.10.2022</p>
-                </li>
-                <li>
-                    <h3>ETH/USDT</h3>
-                    <p>SPOT · 1 хв. тому</p>
-                    <p>Прибуток</p>
-                    <p>16.3%</p>
-                    <p>Ціль 4</p>
-                    <p>Дата входу 06.10.2022</p>
-                </li>
-                <li>
-                    <h3>NEAR/USDT</h3>
-                    <p>SPOT · 1 хв. тому</p>
-                    <p>Прибуток</p>
-                    <p>0.963%</p>
-                    <p>Ціль 4</p>
-                    <p>Дата входу 06.10.2022</p>
-                </li>
+      <!-- Герой  -->
+      <section class="hero">
+        <div class="container">
+          <!-- <div>
+            <ul class="list">
+              <li>
+                <h2>ETH/USDT</h2>
+                <p>Short</p>
+                <p>+141%</p>
+              </li>
+              <li>
+                <h2>ETH/USDT</h2>
+                <p>Short</p>
+                <p>+116%</p>
+              </li>
             </ul>
-        </section>
-        <!-- Про компанію  -->
-        <section class="about">
-            <h2>про компанцію</h2>
-            <p>
-                Ми є досвідченою командою, для якої трейдинг – професія. TradeBlade є
-                авторизованим офіційним брокером біржі Binance. Він надає користувачам
-                безліч переваг, таких як більше висока швидкість синхронізації API та
-                можливість створити обліковий запис Binance через платформу TradeBlade
-                всього в 1 клік.
-            </p>
-            <form class="form-about" name="form_about">
-                <strong>Спробуйте зараз та отримайте 5 днів безкоштовного
-                    користування</strong>
-                <input type="email" />
-                <button type="submit">спробувати</button>
-            </form>
-        </section>
-        <!-- Тарифи -->
-        <section class="tariffs">
-            <h2>тарифи</h2>
-            <button type="button">СПОТ</button>
-            <button type="button">Ф'ючерс</button>
-            <ul>
+          </div> -->
+          <img
+            src="./img/img-hero-mob.png"
+            alt="угоди професіональних трейдерів"
+            width="300"
+            height="134"
+          />
+          <h1 class="hero-title">моментально копіюй угоди профі трейдерів</h1>
+          <p class="hero-text">
+            Почни копіювати угоди з успішною командою професійних трейдерів у
+            автоматичний режим.
+          </p>
+          <form name="form_hero" class="hero-form">
+            <input
+              type="email"
+              name="email"
+              class="input-email"
+              placeholder="Ваш e–mail"
+            />
+            <button type="submit" class="button-form">почати</button>
+          </form>
+          <p class="after-form">5 днів безкоштовного користування</p>
+        </div>
+      </section>
+      <!-- Прибуток  -->
+      <section class="profit">
+        <div class="container">
+          <h2 class="title">Цифри</h2>
+          <p class="progit-text profit-date">Вересень 2022</p>
+          <p class="profit-text">Торгового прибутку</p>
+          <p class="amount">2756%</p>
+          <p class="profit-text">ф'ючерсних та спотових угод</p>
+          <p class="amount">67</p>
+          <p class="profit-text">прибуток підписників</p>
+          <p class="amount">375000</p>
+        </div>
+      </section>
+      <!-- Минулі угоди -->
+      <section class="past-trades">
+        <div class="container">
+          <h2 class="title trade-title">минулі угоди</h2>
+          <p class="trade-status">Онлайн</p>
+          <div>
+            <h3 class="sub-title">NEAR/USDT</h3>
+            <p class="trade-text">SPOT · 1 хв. тому</p>
+            <p class="trade-text trade-profit">ПРИБУТОК</p>
+            <p class="trade-percent">58.6206%</p>
+            <p class="trade-text">Ціль 4</p>
+            <p class="trade-text">Дата входу 06.10.2022</p>
+          </div>
+        </div>
+      </section>
+      <!-- Про компанію  -->
+      <section class="about">
+        <div class="container">
+          <h2 class="title">про компанію</h2>
+          <p class="text">
+            Ми є досвідченою командою, для якої трейдинг – професія. TradeBlade
+            є авторизованим офіційним брокером біржі Binance. Він надає
+            користувачам безліч переваг, таких як більше висока швидкість
+            синхронізації API та можливість створити обліковий запис Binance
+            через платформу TradeBlade всього в 1 клік.
+          </p>
+          <form class="about-form" name="about_form">
+            <strong class="form-text"
+              >Спробуйте зараз та отримайте 5 днів безкоштовного
+              користування</strong
+            >
+            <input
+              type="email"
+              placeholder="ваш e-mail"
+              class="input-email input-about"
+            />
+            <button type="submit" class="button-form">спробувати</button>
+          </form>
+        </div>
+      </section>
+      <!-- Тарифи -->
+      <section class="tariffs">
+        <div class="container">
+          <h2 class="title tarrifs-title">тарифи</h2>
+          <ul class="list buttons-wrapper">
+            <li>
+              <button type="button" class="button button-basic button-spot">
+                СПОТ
+              </button>
+            </li>
+            <li>
+              <button type="button" class="button button-basic">Ф'ючерс</button>
+            </li>
+          </ul>
+          <ul class="list">
+            <li>
+              <h3 class="sub-title">STANDART</h3>
+              <ul class="list">
                 <li>
-                    <h3>STANDART</h3>
-                    <ul>
-                        <li>
-                            <p>Ручний трейдинг</p>
-                        </li>
-                        <li>
-                            <p>Автоматичне або напівавтоматичне копіювання угод</p>
-                        </li>
-                        <li>
-                            <p>Особистий кабінет зі статистикою</p>
-                        </li>
-                        <li>
-                            <p>Середньострокові угоди з рівнями набору портфеля</p>
-                        </li>
-                    </ul>
-                    <p>$234</p>
-                    <p>-35%</p>
-                    <button type="button">12 місяців</button>
-                    <a href="">
-                        <p>Спробувати</p>
-                        <p>5 днів безкоштовно</p>
-                    </a>
+                  <p class="tariffs-text">Ручний трейдинг</p>
                 </li>
                 <li>
-                    <h3>VIP</h3>
-                    <ul>
-                        <li>
-                            <p>Ручний трейдинг</p>
-                        </li>
-                        <li>
-                            <p>Автоматичне або напівавтоматичне копіювання угод</p>
-                        </li>
-                        <li>
-                            <p>Особистий кабінет зі статистикою</p>
-                        </li>
-                        <li>
-                            <p>Короткострокові, середньострокові та інвест угоди</p>
-                        </li>
-                        <li>
-                            <p>Доступ до Vip чату з командою</p>
-                        </li>
-                        <li>
-                            <p>Наш авторський курс з трейдингу</p>
-                        </li>
-                    </ul>
-                    <p>$585</p>
-                    <p>-35%</p>
-                    <button type="button">12 місяців</button>
-                    <a href="">
-                        <p>Спробувати</p>
-                        <p>5 днів безкоштовно</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!-- Поширені запитання -->
-        <section class="common-questions">
-            <h2>поширені запитання</h2>
-            <ul>
-                <li>
-                    <h3>Що таке TradeBlade</h3>
-                    <p>
-                        Ми є досвідченою командою, для якої трейдинг – професія.
-                        TradeBlade є авторизованим офіційним брокером біржі Binance.
-                    </p>
+                  <p class="tariffs-text">
+                    Автоматичне або напівавтоматичне копіювання угод
+                  </p>
                 </li>
                 <li>
-                    <h3>Що TradeBlade пропонує інвесторам</h3>
+                  <p class="tariffs-text">Особистий кабінет зі статистикою</p>
                 </li>
                 <li>
-                    <h3>Чи маю я переказати свої кошти на TradeBlade</h3>
+                  <p class="tariffs-text">
+                    Середньострокові угоди з рівнями набору портфеля
+                  </p>
                 </li>
-            </ul>
-        </section>
+              </ul>
+              <p class="tariffs-price">
+                $234 <sup class="tariffs-discount">-35%</sup>
+              </p>
+              <button type="button" class="button tariffs-button">
+                12 місяців
+                <svg class="icon">
+                  <use href="./img/sprite.svg#checkbox-down"></use>
+                </svg>
+              </button>
+              <a href="" class="tariffs-link">
+                <p class="text-try">Спробувати</p>
+                <p class="text-free">5 днів безкоштовно</p>
+              </a>
+            </li>
+            <li>
+              <h3 class="sub-title">VIP</h3>
+              <ul class="list">
+                <li>
+                  <p class="tariffs-text">Ручний трейдинг</p>
+                </li>
+                <li>
+                  <p class="tariffs-text">
+                    Автоматичне або напівавтоматичне копіювання угод
+                  </p>
+                </li>
+                <li>
+                  <p class="tariffs-text">Особистий кабінет зі статистикою</p>
+                </li>
+                <li>
+                  <p class="tariffs-text">
+                    Короткострокові, середньострокові та інвест угоди
+                  </p>
+                </li>
+                <li>
+                  <p class="tariffs-text">Доступ до Vip чату з командою</p>
+                </li>
+                <li>
+                  <p class="tariffs-text">Наш авторський курс з трейдингу</p>
+                </li>
+              </ul>
+              <p class="tariffs-price">
+                $234 <sup class="tariffs-discount">-35%</sup>
+              </p>
+              <button type="button" class="button tariffs-button">
+                12 місяців
+                <svg class="icon">
+                  <use href="./img/sprite.svg#checkbox-down"></use>
+                </svg>
+              </button>
+              <a href="" class="tariffs-link">
+                <p class="text-try">Спробувати</p>
+                <p class="text-free">5 днів безкоштовно</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Поширені запитання -->
+      <section class="common-questions">
+        <div class="container">
+          <h2 class="title questions-title">поширені запитання</h2>
+          <ul class="list">
+            <li class="questions-item">
+              <div class="title-color">
+                <h3 class="sub-title">Що таке TradeBlade</h3>
+                <button type="button" class="button">
+                  <svg class="icon">
+                    <use href="./img/sprite.svg#checkbox-top"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="text">
+                Ми є досвідченою командою, для якої трейдинг – професія.
+                TradeBlade є авторизованим офіційним брокером біржі Binance. Він
+                надає користувачам безліч переваг, таких як більш висока
+                швидкість синхронізації API та можливість створити обліковий
+                запис Binance через платформу TradeBlade всього в 1 клік.
+              </p>
+            </li>
+            <li class="questions-item">
+              <div class="title-color">
+                <h3 class="sub-title dark-color">
+                  Що TradeBlade пропонує інвесторам
+                </h3>
+                <button type="button" class="button questions-button">
+                  <svg class="icon questions-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="questions-item">
+              <div class="title-color">
+                <h3 class="sub-title dark-color">
+                  Чи повинен я переказати свої кошти на TradeBlade
+                </h3>
+                <button type="button" class="button questions-button">
+                  <svg class="icon questions-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- Футер -->
     <footer>
-        <p>Швидка навігація</p>
-        <ul>
-            <li><a href="">Цифри</a></li>
-            <li><a href="">Угоди онлайн</a></li>
-            <li><a href="">Про компанію</a></li>
-            <li><a href="">tradeblad це</a></li>
-            <li><a href="">тарифи</a></li>
-            <li><a href="">FAQ</a></li>
-        </ul>
+      <div class="container">
+        <p class="footer-text">Швидка навігація</p>
+        <nav>
+          <ul class="list">
+            <li><a href="" class="nav-link">Цифри</a></li>
+            <li><a href="" class="nav-link">Угоди онлайн</a></li>
+            <li><a href="" class="nav-link">Про компанію</a></li>
+            <li><a href="" class="nav-link">tradeblad це</a></li>
+            <li><a href="" class="nav-link">як почати</a></li>
+            <li><a href="" class="nav-link">тарифи</a></li>
+            <li><a href="" class="nav-link">FAQ</a></li>
+          </ul>
+        </nav>
         <a href="">
-            <svg>
-                <use href=""></use>
-            </svg>
+          <svg width="165" height="80">
+            <use href="./img/sprite.svg#logo-footer-mob"></use>
+          </svg>
         </a>
-        <p>&#169; 2022 TradeBlade. All rights reserved</p>
+        <p class="copyright">&#169; 2022 TradeBlade. All rights reserved</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
