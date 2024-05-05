@@ -24,17 +24,41 @@
     <!-- Хедер -->
     <header>
       <div class="container header-mob">
-        <nav>
+        <nav class="navigation-header">
           <a href="" class="header-link">
             <svg width="107" height="52">
               <use href="./img/sprite.svg#logo-header-mob"></use>
             </svg>
           </a>
+          <ul class="list nav-list">
+            <li><a href="" class="nav-link">цифри</a></li>
+            <li><a href="" class="nav-link">угоди онлайн</a></li>
+            <li><a href="" class="nav-link">про компанію</a></li>
+            <li><a href="" class="nav-link">як почати</a></li>
+            <li><a href="" class="nav-link">тарифи</a></li>
+            <li><a href="" class="nav-link">відгуки</a></li>
+            <li><a href="" class="nav-link">FAQ</a></li>
+          </ul>
         </nav>
+        <ul class="list buttons-list">
+          <li>
+            <button type="button" class="button button-enter header">
+              вхід
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="button button-enter button-registration header"
+            >
+              реєстрація
+            </button>
+          </li>
+        </ul>
         <!-- Бургер меню -->
         <button
           type="button"
-          class="button js-open-menu"
+          class="button js-open-menu open-button"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >
@@ -89,27 +113,30 @@
       <!-- Герой  -->
       <section>
         <div class="container hero">
-          <!-- <div>
-            <ul class="list">
-              <li>
-                <h2>ETH/USDT</h2>
-                <p>Short</p>
-                <p>+141%</p>
-              </li>
-              <li>
-                <h2>ETH/USDT</h2>
-                <p>Short</p>
-                <p>+116%</p>
-              </li>
-            </ul>
-          </div> -->
-          <img
-            src="./img/img-hero-mob.png"
-            alt="угоди професіональних трейдерів"
-            width="300"
-            height="134"
-          />
-          <h1 class="hero-title">моментально копіюй угоди профі трейдерів</h1>
+          <div class="img-title">
+            <picture>
+              <!-- desktop -->
+              <source
+                media="(min-width: 1300px)"
+                srcset="./img/img-hero.png 1x, ./img/img-hero-desc2x.png 2x"
+                type="image/png"
+              />
+              <!-- mobile -->
+              <source
+                media="(min-width: 375px)"
+                srcset="./img/img-hero-mob.png 1x, ./img/img-hero-mob2x.png 2x"
+                type="image/png"
+              />
+              <img
+                src="./img/img-hero-mob.png"
+                alt="угоди професійних трейдерів"
+                width="300"
+                height="134"
+              />
+            </picture>
+
+            <h1 class="hero-title">моментально копіюй угоди профі трейдерів</h1>
+          </div>
           <p class="hero-text">
             Почни копіювати угоди з успішною командою професійних трейдерів у
             автоматичний режим.
@@ -129,13 +156,10 @@
       <!-- Прибуток  -->
       <section>
         <div class="container profit">
-          <div class="wrapper-rectangle">
-            <img src="./img/title-profit.png" alt="" width="272" height="82" />
+          <div class="title-date">
             <h2 class="title">Цифри</h2>
+            <p class="profit-text profit-date">Вересень 2022</p>
           </div>
-
-          <p class="profit-text profit-date">Вересень 2022</p>
-
           <ul class="list profit-list">
             <li class="profit-item">
               <p class="profit-text">Торгового прибутку</p>
@@ -157,23 +181,82 @@
         <div class="container past-trades">
           <h2 class="title trade-title">минулі угоди</h2>
           <p class="trade-status">Онлайн</p>
-          <div class="card">
-            <div class="near-spot">
-              <h3 class="sub-title">NEAR/USDT</h3>
-              <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+          <div class="wrapper-card">
+            <div class="card">
+              <div class="near-spot">
+                <h3 class="sub-title">NEAR/USDT</h3>
+                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+              </div>
+              <div class="profit-percent">
+                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                <p class="trade-percent">
+                  58.6206%
+                  <svg width="9" height="16" class="trade-icon">
+                    <use href="./img/sprite.svg#arrow-top"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="goal-date">
+                <p class="trade-text opacity-second">Ціль 4</p>
+                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+              </div>
             </div>
-            <div class="profit-percent">
-              <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
-              <p class="trade-percent">
-                58.6206%
-                <svg width="9" height="16" class="trade-icon">
-                  <use href="./img/sprite.svg#arrow-top"></use>
-                </svg>
-              </p>
+            <div class="card">
+              <div class="near-spot">
+                <h3 class="sub-title">NEAR/USDT</h3>
+                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+              </div>
+              <div class="profit-percent">
+                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                <p class="trade-percent">
+                  58.6206%
+                  <svg width="9" height="16" class="trade-icon">
+                    <use href="./img/sprite.svg#arrow-top"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="goal-date">
+                <p class="trade-text opacity-second">Ціль 4</p>
+                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+              </div>
             </div>
-            <div class="goal-date">
-              <p class="trade-text opacity-second">Ціль 4</p>
-              <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+            <div class="card">
+              <div class="near-spot">
+                <h3 class="sub-title">NEAR/USDT</h3>
+                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+              </div>
+              <div class="profit-percent">
+                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                <p class="trade-percent">
+                  58.6206%
+                  <svg width="9" height="16" class="trade-icon">
+                    <use href="./img/sprite.svg#arrow-top"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="goal-date">
+                <p class="trade-text opacity-second">Ціль 4</p>
+                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="near-spot">
+                <h3 class="sub-title">NEAR/USDT</h3>
+                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+              </div>
+              <div class="profit-percent">
+                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                <p class="trade-percent">
+                  58.6206%
+                  <svg width="9" height="16" class="trade-icon">
+                    <use href="./img/sprite.svg#arrow-top"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="goal-date">
+                <p class="trade-text opacity-second">Ціль 4</p>
+                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+              </div>
             </div>
           </div>
         </div>

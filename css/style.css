@@ -28,6 +28,16 @@ p {
     margin: 0;
 }
 
+.title {
+    font-size: 28px;
+    line-height: 1.28;
+    letter-spacing: -1.12px;
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -43,8 +53,8 @@ p {
 @media screen and (min-width:1300px) {
     .container {
         max-width: 1300px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 }
 
@@ -62,6 +72,13 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (min-width:1300px) {
+    .navigation-header {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-link {
@@ -100,8 +117,16 @@ p {
     margin-bottom: 32px;
 
     height: 52px;
+}
 
-    background-color: pink;
+.open-button {
+    display: inline-flex;
+}
+
+@media screen and (min-width:1300px) {
+    .open-button {
+        display: none;
+    }
 }
 
 .button-close {
@@ -152,15 +177,99 @@ p {
     color: #57E1FF;
 
     border-radius: 3px;
-    border: 2px solid, #57E1FF;
+    border: 2px solid #57E1FF;
     background-color: rgba(87, 225, 255, 0.20);
     box-shadow: 0px 0px 4px 0px #57E1FF;
+}
+
+.header-mob .nav-list {
+    display: none;
+}
+
+@media screen and (min-width:1300px) {
+    .header-mob .nav-list {
+        margin-left: 129px;
+
+        display: flex;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width:1300px) {}
+
+@media screen and (min-width:1300px) {
+    .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.21;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}
+
+
+
+@media screen and (min-width:1300px) {
+    .buttons-list {
+        margin-left: auto;
+
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.button-enter.header {
+    display: none;
+}
+
+@media screen and (min-width:1300px) {
+    .button-enter.header {
+        min-width: 86px;
+        padding: 11px 24px;
+        display: block;
+
+        color: #57E1FF;
+        background-color: rgba(87, 225, 255, 0.2);
+    }
+}
+
+.button-registration.header {
+    display: none;
+}
+
+@media screen and (min-width:1300px) {
+    .button-registration.header {
+        min-width: 146px;
+        display: block;
+
+        color: #030718;
+        background-color: #57E1FF;
+        border: none;
+    }
 }
 
 /* СТИЛІ ДЛЯ ГЕРОЯ */
 .hero {
     padding-top: 40px;
     padding-bottom: 37px;
+}
+
+@media screen and (min-width:1300px) {
+    .hero {
+        padding-bottom: 134px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .img-title {
+        margin-top: 160px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
 }
 
 .hero-title {
@@ -175,16 +284,40 @@ p {
     color: #ffffff;
 }
 
+@media screen and (min-width:1300px) {
+    .hero-title {
+        max-width: 630px;
+        margin-top: 0;
+
+        font-size: 60px;
+        line-height: 1.2;
+        letter-spacing: -2.4px;
+    }
+}
+
 .hero-text {
     margin-top: 12px;
     line-height: 1.25;
 
-    color: #e7f7f8;
+    color: rgba(231, 247, 248, 0.8);
+}
+
+@media screen and (min-width:1300px) {
+    .hero-text {
+        max-width: 565px;
+        margin-top: 0;
+    }
 }
 
 .hero-form {
     position: relative;
     margin-top: 24px;
+}
+
+@media screen and (min-width:1300px) {}
+
+.hero-form {
+    max-width: 500px;
 }
 
 .input-email {
@@ -205,7 +338,7 @@ p {
     letter-spacing: -0.14px;
 
     text-transform: uppercase;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-form>.button-form {
@@ -246,15 +379,28 @@ p {
     background-color: #ffffff;
 }
 
-.title {
-    font-size: 28px;
-    line-height: 1.28;
-    letter-spacing: -1.12px;
-
-    text-transform: uppercase;
-
-    color: #000000;
+@media screen and (min-width:1300px) {
+    .profit {
+        padding-top: 65px;
+        padding-bottom: 61px;
+    }
 }
+
+@media screen and (min-width:1300px) {
+    .title-date {
+        margin-right: 157px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .profit .title {
+        font-size: 44px;
+        line-height: 1.27;
+        letter-spacing: -1.76px;
+        text-transform: uppercase;
+    }
+}
+
 
 .profit-text {
     margin-bottom: 4px;
@@ -286,6 +432,13 @@ p {
     color: #6a54ff;
 }
 
+@media screen and (min-width:1300px) {
+    .profit .amount {
+        font-size: 60px;
+        letter-spacing: -1.2px;
+    }
+}
+
 .profit-list {
     display: flex;
     flex-wrap: wrap;
@@ -297,18 +450,48 @@ p {
     max-width: 147px;
 }
 
+@media screen and (min-width:1300px) {
+    .profit-item:nth-child(1) {
+        max-width: 196px;
+        margin-right: 129px;
+    }
+}
+
 .profit-item:nth-child(2) {
     max-width: 153px;
+}
+
+@media screen and (min-width:1300px) {
+    .profit-item:nth-child(2) {
+        max-width: 307px;
+        margin-right: 18px;
+    }
 }
 
 .profit-item:nth-child(3) {
     max-width: 147px;
 }
 
+@media screen and (min-width:1300px) {
+    .profit-item:nth-child(3) {
+        max-width: 210px;
+    }
+}
+
 /* СТИЛІ ДЛЯ "МИНУЛИХ УГОД" */
 .past-trades {
     padding-top: 48px;
     padding-bottom: 53px;
+}
+
+@media screen and (min-width:1300px) {
+    .past-trades {
+        padding-top: 96px;
+        padding-bottom: 118px;
+
+        font-size: 44px;
+        letter-spacing: -1.76px;
+    }
 }
 
 .trade-title {
@@ -331,6 +514,12 @@ p {
     color: rgba(53, 255, 158, 0.9);
 }
 
+@media screen and (min-width:1300px) {
+    .trade-status {
+        margin-bottom: 73px;
+    }
+}
+
 .trade-status::before {
     content: "";
     display: block;
@@ -341,6 +530,13 @@ p {
     border-radius: 50%;
 }
 
+@media screen and (min-width:1300px) {
+    .wrapper-card {
+        display: flex;
+        gap: 20px;
+    }
+}
+
 .past-trades .card {
     padding: 16px 16px 13px 16px;
     background-color: #6a54ff;
@@ -348,6 +544,12 @@ p {
     background-image: url("../img/bg-past-trades-mob.png");
     background-repeat: no-repeat;
     background-position: 100% 8px;
+}
+
+@media screen and (min-width:1300px) {
+    .past-trades .card {
+        width: 299px;
+    }
 }
 
 .card .near-spot {
@@ -433,10 +635,26 @@ p {
     color: #030718;
 }
 
+@media screen and (min-width:1300px) {
+    .about .title {
+        margin-bottom: 40px;
+
+        font-size: 44px;
+        line-height: 1.27;
+        letter-spacing: -1.76px;
+    }
+}
+
 .about .text {
     margin-bottom: 40px;
 
     color: rgba(3, 7, 24, 0.8);
+}
+
+@media screen and (min-width:1300px) {
+    .about .text {
+        max-width: 413px;
+    }
 }
 
 .about .text-secondary {
