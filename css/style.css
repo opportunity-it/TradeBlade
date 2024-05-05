@@ -47,7 +47,6 @@ p {
     max-width: 375px;
 
     background-color: #030718;
-    outline: 1px solid red;
 }
 
 @media screen and (min-width:1300px) {
@@ -636,6 +635,8 @@ p {
 
 /* СТИЛІ ДЛЯ "ПРО КОМПАНІЮ" */
 .about {
+    position: relative;
+
     background-color: #FFFFFF;
 }
 
@@ -667,7 +668,7 @@ p {
 }
 
 .about .text {
-    margin-bottom: 40px;
+    padding-bottom: 132px;
 
     color: rgba(3, 7, 24, 0.8);
 }
@@ -685,7 +686,13 @@ p {
 }
 
 .about .about-form {
+    position: absolute;
+    bottom: -124px;
+    left: 50%;
     padding: 16px;
+
+    width: 356px;
+    transform: translateX(-50%);
 
     border-radius: 4px;
     background-color: #6a54ff;
@@ -780,7 +787,7 @@ p {
 
 /* СТИЛІ ДЛЯ "ТАРИФИ" */
 .tariffs {
-    padding-top: 56px;
+    padding-top: 180px;
     padding-bottom: 44px;
 
     background-color: #030718;
