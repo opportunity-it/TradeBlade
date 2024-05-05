@@ -47,7 +47,7 @@
       <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.867" d="m8 12.667 8 8 8-8"/>
     </symbol>
     <symbol id="checkbox" viewBox="0 0 32 32">
-      <path fill="none" stroke="var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.733" d="m5.333 17.501 9.899 9.899 14-21"/>
+      <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.733" d="m5.333 17.501 9.899 9.899 14-21"/>
     </symbol>
     <symbol id="burger-close" viewBox="0 0 32 32">
       <path fill="var(--color1, #fff)" d="M8.74 8.74a.93.93 0 0 1 1.32 0l13.2 13.2a.933.933 0 0 1-1.32 1.32l-13.2-13.2a.93.93 0 0 1 0-1.32z"/>
@@ -57,7 +57,7 @@
       <path fill="var(--color5, #e7f7f8)" d="M4.4 9.333c0-.515.418-.933.933-.933h21.334a.933.933 0 1 1 0 1.868H5.333a.933.933 0 0 1-.933-.933v-.001zM4.4 16c0-.515.418-.933.933-.933h21.334a.933.933 0 0 1 0 1.866H5.333A.933.933 0 0 1 4.4 16zm0 6.666c0-.515.418-.933.933-.933h21.334a.933.933 0 1 1 0 1.866H5.333a.933.933 0 0 1-.933-.933v-.001z"/>
     </symbol>
     <symbol id="arrow-top" viewBox="0 0 20 32">
-      <path fill="none" stroke="var(--color6, #35ff9e)" stroke-width="3.556" d="m10.158 3.556 7.62 8m-7.62-8-8.38 8m8.38-8V32"/>
+      <path fill="none" stroke-width="3.556" d="m10.158 3.556 7.62 8m-7.62-8-8.38 8m8.38-8V32"/>
     </symbol>
            </defs>
 </svg>

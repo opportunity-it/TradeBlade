@@ -22,7 +22,7 @@
 
   <body>
     <!-- Хедер -->
-    <header class="header">
+    <header>
       <div class="container header-mob">
         <nav>
           <a href="" class="header-link">
@@ -41,8 +41,8 @@
     </header>
     <main>
       <!-- Герой  -->
-      <section class="hero">
-        <div class="container">
+      <section>
+        <div class="container hero">
           <!-- <div>
             <ul class="list">
               <li>
@@ -81,43 +81,65 @@
         </div>
       </section>
       <!-- Прибуток  -->
-      <section class="profit">
-        <div class="container">
+      <section>
+        <div class="container profit">
           <h2 class="title">Цифри</h2>
-          <p class="progit-text profit-date">Вересень 2022</p>
-          <p class="profit-text">Торгового прибутку</p>
-          <p class="amount">2756%</p>
-          <p class="profit-text">ф'ючерсних та спотових угод</p>
-          <p class="amount">67</p>
-          <p class="profit-text">прибуток підписників</p>
-          <p class="amount">375000</p>
+          <p class="profit-text profit-date">Вересень 2022</p>
+
+          <ul class="list profit-list">
+            <li class="profit-item">
+              <p class="profit-text">Торгового прибутку</p>
+              <p class="amount">2756%</p>
+            </li>
+            <li class="profit-item">
+              <p class="profit-text">ф'ючерсних та спотових угод</p>
+              <p class="amount">67</p>
+            </li>
+            <li class="profit-item">
+              <p class="profit-text">прибуток підписників</p>
+              <p class="amount">375000</p>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Минулі угоди -->
-      <section class="past-trades">
-        <div class="container">
+      <section>
+        <div class="container past-trades">
           <h2 class="title trade-title">минулі угоди</h2>
           <p class="trade-status">Онлайн</p>
-          <div>
-            <h3 class="sub-title">NEAR/USDT</h3>
-            <p class="trade-text">SPOT · 1 хв. тому</p>
-            <p class="trade-text trade-profit">ПРИБУТОК</p>
-            <p class="trade-percent">58.6206%</p>
-            <p class="trade-text">Ціль 4</p>
-            <p class="trade-text">Дата входу 06.10.2022</p>
+          <div class="card">
+            <div class="near-spot">
+              <h3 class="sub-title">NEAR/USDT</h3>
+              <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+            </div>
+            <div class="profit-percent">
+              <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+              <p class="trade-percent">
+                58.6206%
+                <svg width="9" height="16" class="trade-icon">
+                  <use href="./img/sprite.svg#arrow-top"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="goal-date">
+              <p class="trade-text opacity-second">Ціль 4</p>
+              <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+            </div>
           </div>
         </div>
       </section>
       <!-- Про компанію  -->
-      <section class="about">
-        <div class="container">
+      <section>
+        <div class="container about">
           <h2 class="title">про компанію</h2>
           <p class="text">
             Ми є досвідченою командою, для якої трейдинг – професія. TradeBlade
-            є авторизованим офіційним брокером біржі Binance. Він надає
-            користувачам безліч переваг, таких як більше висока швидкість
-            синхронізації API та можливість створити обліковий запис Binance
-            через платформу TradeBlade всього в 1 клік.
+            є авторизованим офіційним брокером біржі Binance.
+            <span class="text-secondary"
+              >Він надає користувачам безліч переваг, таких як більше висока
+              швидкість синхронізації API та можливість створити обліковий запис
+              Binance через платформу TradeBlade всього в 1 клік.</span
+            >
           </p>
           <form class="about-form" name="about_form">
             <strong class="form-text"
@@ -134,8 +156,8 @@
         </div>
       </section>
       <!-- Тарифи -->
-      <section class="tariffs">
-        <div class="container">
+      <section>
+        <div class="container tariffs">
           <h2 class="title tarrifs-title">тарифи</h2>
           <ul class="list buttons-wrapper">
             <li>
@@ -147,76 +169,107 @@
               <button type="button" class="button button-basic">Ф'ючерс</button>
             </li>
           </ul>
-          <ul class="list">
-            <li>
+          <ul class="list tariffs-list">
+            <li class="tariffs-item">
               <h3 class="sub-title">STANDART</h3>
-              <ul class="list">
-                <li>
+              <ul class="list standart-list">
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">Ручний трейдинг</p>
                 </li>
-                <li>
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">
                     Автоматичне або напівавтоматичне копіювання угод
                   </p>
                 </li>
-                <li>
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">Особистий кабінет зі статистикою</p>
                 </li>
-                <li>
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">
                     Середньострокові угоди з рівнями набору портфеля
                   </p>
                 </li>
               </ul>
-              <p class="tariffs-price">
-                $234 <sup class="tariffs-discount">-35%</sup>
-              </p>
-              <button type="button" class="button tariffs-button">
-                12 місяців
-                <svg class="icon">
-                  <use href="./img/sprite.svg#checkbox-down"></use>
-                </svg>
-              </button>
+              item
+              <div class="price-button">
+                <p class="tariffs-price">$234</p>
+                <button type="button" class="button tariffs-button">
+                  12 місяців
+                  <svg class="icon month-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
               <a href="" class="tariffs-link">
                 <p class="text-try">Спробувати</p>
                 <p class="text-free">5 днів безкоштовно</p>
               </a>
             </li>
-            <li>
+            <li class="tariffs-item vip">
               <h3 class="sub-title">VIP</h3>
-              <ul class="list">
-                <li>
+              <ul class="list vip-list">
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">Ручний трейдинг</p>
                 </li>
-                <li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">
                     Автоматичне або напівавтоматичне копіювання угод
                   </p>
                 </li>
-                <li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">Особистий кабінет зі статистикою</p>
                 </li>
-                <li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">
                     Короткострокові, середньострокові та інвест угоди
                   </p>
                 </li>
-                <li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">Доступ до Vip чату з командою</p>
                 </li>
-                <li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
                   <p class="tariffs-text">Наш авторський курс з трейдингу</p>
                 </li>
               </ul>
-              <p class="tariffs-price">
-                $234 <sup class="tariffs-discount">-35%</sup>
-              </p>
-              <button type="button" class="button tariffs-button">
-                12 місяців
-                <svg class="icon">
-                  <use href="./img/sprite.svg#checkbox-down"></use>
-                </svg>
-              </button>
+              <div class="price-button">
+                <p class="tariffs-price">$234</p>
+                <button type="button" class="button tariffs-button">
+                  12 місяців
+                  <svg class="icon month-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
               <a href="" class="tariffs-link">
                 <p class="text-try">Спробувати</p>
                 <p class="text-free">5 днів безкоштовно</p>
@@ -226,14 +279,14 @@
         </div>
       </section>
       <!-- Поширені запитання -->
-      <section class="common-questions">
-        <div class="container">
+      <section>
+        <div class="container common-questions">
           <h2 class="title questions-title">поширені запитання</h2>
-          <ul class="list">
+          <ul class="list question-list">
             <li class="questions-item">
               <div class="title-color">
                 <h3 class="sub-title">Що таке TradeBlade</h3>
-                <button type="button" class="button">
+                <button type="button" class="button questions-button">
                   <svg class="icon">
                     <use href="./img/sprite.svg#checkbox-top"></use>
                   </svg>
@@ -241,10 +294,13 @@
               </div>
               <p class="text">
                 Ми є досвідченою командою, для якої трейдинг – професія.
-                TradeBlade є авторизованим офіційним брокером біржі Binance. Він
-                надає користувачам безліч переваг, таких як більш висока
-                швидкість синхронізації API та можливість створити обліковий
-                запис Binance через платформу TradeBlade всього в 1 клік.
+                TradeBlade є авторизованим офіційним брокером біржі Binance.
+                <span class="text-first">
+                  Він надає користувачам безліч переваг, таких як більш висока
+                  швидкість синхронізації API та можливість створити обліковий
+                  запис Binance через платформу TradeBlade всього в 1
+                  клік.</span
+                >
               </p>
             </li>
             <li class="questions-item">
@@ -252,7 +308,7 @@
                 <h3 class="sub-title dark-color">
                   Що TradeBlade пропонує інвесторам
                 </h3>
-                <button type="button" class="button questions-button">
+                <button type="button" class="button questions-button black">
                   <svg class="icon questions-icon">
                     <use href="./img/sprite.svg#checkbox-down"></use>
                   </svg>
@@ -264,7 +320,7 @@
                 <h3 class="sub-title dark-color">
                   Чи повинен я переказати свої кошти на TradeBlade
                 </h3>
-                <button type="button" class="button questions-button">
+                <button type="button" class="button questions-button black">
                   <svg class="icon questions-icon">
                     <use href="./img/sprite.svg#checkbox-down"></use>
                   </svg>
@@ -277,21 +333,31 @@
     </main>
     <!-- Футер -->
     <footer>
-      <div class="container">
-        <p class="footer-text">Швидка навігація</p>
-        <nav>
-          <ul class="list">
-            <li><a href="" class="nav-link">Цифри</a></li>
-            <li><a href="" class="nav-link">Угоди онлайн</a></li>
-            <li><a href="" class="nav-link">Про компанію</a></li>
-            <li><a href="" class="nav-link">tradeblad це</a></li>
-            <li><a href="" class="nav-link">як почати</a></li>
-            <li><a href="" class="nav-link">тарифи</a></li>
-            <li><a href="" class="nav-link">FAQ</a></li>
-          </ul>
-        </nav>
-        <a href="">
-          <svg width="165" height="80">
+      <div class="container footer">
+        <div class="text-link">
+          <p class="footer-text">Швидка навігація</p>
+          <nav>
+            <ul class="list footer-list">
+              <li><a href="" class="footer-link">Цифри</a></li>
+              <li>
+                <a href="" class="footer-link">Угоди онлайн</a>
+              </li>
+              <li>
+                <a href="" class="footer-link">Про компанію</a>
+              </li>
+              <li>
+                <a href="" class="footer-link">tradeblad це</a>
+              </li>
+              <li>
+                <a href="" class="footer-link">як почати</a>
+              </li>
+              <li><a href="" class="footer-link">тарифи</a></li>
+              <li><a href="" class="footer-link">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a href="" class="link-icon">
+          <svg width="165" height="80" c>
             <use href="./img/sprite.svg#logo-footer-mob"></use>
           </svg>
         </a>
