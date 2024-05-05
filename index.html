@@ -26,17 +26,63 @@
       <div class="container header-mob">
         <nav>
           <a href="" class="header-link">
-            <svg class="header-logo" width="107" height="52">
+            <svg width="107" height="52">
               <use href="./img/sprite.svg#logo-header-mob"></use>
             </svg>
           </a>
         </nav>
-        <button type="button" class="button burger-open">
-          <svg width="32" height="32" aria-label="перемикач мобільного меню">
+        <!-- Бургер меню -->
+        <button
+          type="button"
+          class="button js-open-menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg
+            aria-label="кнопка відкриття  бургер меню"
+            class="open-icon"
+            width="32"
+            height="32"
+          >
             <use href="./img/sprite.svg#burger-open"></use>
-            <use href="./img/sprite.svg#burger-close"></use>
           </svg>
         </button>
+        <div class="burger-container js-menu-container">
+          <div class="wrapper-close">
+            <button class="button button-close js-close-menu">
+              <svg class="close-icon" aria-label="кнопка закриття  бургер меню">
+                <use href="./img/sprite.svg#burger-close"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="list burger-list">
+            <li><a href="" class="burger-link">Цифри</a></li>
+            <li>
+              <a href="" class="burger-link">Угоди онлайн</a>
+            </li>
+            <li>
+              <a href="" class="burger-link">Про компанію</a>
+            </li>
+            <li>
+              <a href="" class="burger-link">tradeblad це</a>
+            </li>
+            <li>
+              <a href="" class="burger-link">як почати</a>
+            </li>
+            <li><a href="" class="burger-link">тарифи</a></li>
+            <li><a href="" class="burger-link">FAQ</a></li>
+          </ul>
+          <ul class="list enter-registration">
+            <li>
+              <button type="button" class="button-enter">реєстрація</button>
+            </li>
+            <li>
+              <button type="button" class="button-enter button-registration">
+                увійти
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -83,7 +129,11 @@
       <!-- Прибуток  -->
       <section>
         <div class="container profit">
-          <h2 class="title">Цифри</h2>
+          <div class="wrapper-rectangle">
+            <img src="./img/title-profit.png" alt="" width="272" height="82" />
+            <h2 class="title">Цифри</h2>
+          </div>
+
           <p class="profit-text profit-date">Вересень 2022</p>
 
           <ul class="list profit-list">
@@ -336,25 +386,23 @@
       <div class="container footer">
         <div class="text-link">
           <p class="footer-text">Швидка навігація</p>
-          <nav>
-            <ul class="list footer-list">
-              <li><a href="" class="footer-link">Цифри</a></li>
-              <li>
-                <a href="" class="footer-link">Угоди онлайн</a>
-              </li>
-              <li>
-                <a href="" class="footer-link">Про компанію</a>
-              </li>
-              <li>
-                <a href="" class="footer-link">tradeblad це</a>
-              </li>
-              <li>
-                <a href="" class="footer-link">як почати</a>
-              </li>
-              <li><a href="" class="footer-link">тарифи</a></li>
-              <li><a href="" class="footer-link">FAQ</a></li>
-            </ul>
-          </nav>
+          <ul class="list footer-list">
+            <li><a href="" class="footer-link">Цифри</a></li>
+            <li>
+              <a href="" class="footer-link">Угоди онлайн</a>
+            </li>
+            <li>
+              <a href="" class="footer-link">Про компанію</a>
+            </li>
+            <li>
+              <a href="" class="footer-link">tradeblad це</a>
+            </li>
+            <li>
+              <a href="" class="footer-link">як почати</a>
+            </li>
+            <li><a href="" class="footer-link">тарифи</a></li>
+            <li><a href="" class="footer-link">FAQ</a></li>
+          </ul>
         </div>
         <a href="" class="link-icon">
           <svg width="165" height="80" c>
@@ -364,5 +412,12 @@
         <p class="copyright">&#169; 2022 TradeBlade. All rights reserved</p>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
