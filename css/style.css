@@ -548,16 +548,21 @@ p {
 
 .past-trades .card {
     padding: 16px 16px 13px 16px;
-    background-color: #6a54ff;
 
-    background-image: url("../img/bg-past-trades-mob.png");
+    width: 299px;
+
+    background-image: url("../img/bg-past-trades-mob.png"), url("../img/bg-card.png");
     background-repeat: no-repeat;
     background-position: 100% 8px;
 }
 
+.past-trades .card:not(:first-child) {
+    display: none;
+}
+
 @media screen and (min-width:1300px) {
-    .past-trades .card {
-        width: 299px;
+    .past-trades .card:not(:first-child) {
+        display: block;
     }
 }
 
