@@ -40,10 +40,16 @@ p {
     color: #000000;
 }
 
+@media screen and (min-width:1300px) {
+    .title {
+        font-size: 44px;
+        line-height: 1.27;
+        letter-spacing: -1.76px;
+    }
+}
+
 img {
     display: block;
-    height: auto;
-    max-width: 100%;
 }
 
 .container {
@@ -259,7 +265,7 @@ img {
 /* СТИЛІ ДЛЯ ГЕРОЯ */
 .hero {
     padding-top: 40px;
-    padding-bottom: 37px;
+    padding-bottom: 61px;
 }
 
 @media screen and (min-width:1300px) {
@@ -388,6 +394,7 @@ img {
 
 /* СТИЛІ ДЛЯ ПРИБУТКУ */
 .profit {
+    padding-top: 62px;
     padding-bottom: 48px;
 
     background-color: #ffffff;
@@ -395,9 +402,13 @@ img {
 
 @media screen and (min-width:1300px) {
     .profit {
-        padding-top: 56px;
+        padding-top: 65px;
         padding-bottom: 61px;
     }
+}
+
+.profit-container {
+    position: relative;
 }
 
 @media screen and (min-width:1300px) {
@@ -406,35 +417,57 @@ img {
     }
 }
 
+.profit .title-img {
+    position: absolute;
+    top: -86px;
+    left: 0;
+}
+
 @media screen and (min-width:1300px) {
-    .title-date {
-        margin-right: 157px;
+    .profit .title-img {
+        position: relative;
+
+        min-width: 639px
     }
 }
 
-.profit .wrapper-img {
-    position: relative;
-    background-color: pink;
+@media screen and (min-width:1300px) {
+    .img-mob {
+        display: none;
+    }
+}
 
-    bottom: 24px;
-    right: 15px;
+@media screen and (max-width:1299.99px) {
+    .img-desctop {
+        display: none;
+    }
+}
+
+.profit .title-date {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:1300px) {
+    .profit .title-date {
+        margin-bottom: 0;
+        margin-right: 157px;
+
+        max-width: 169px;
+    }
 }
 
 .profit .title {
     position: absolute;
-    bottom: 0;
     left: 16px;
+    bottom: 0;
 }
 
 @media screen and (min-width:1300px) {
     .profit .title {
-        font-size: 44px;
-        line-height: 1.27;
-        letter-spacing: -1.76px;
-        text-transform: uppercase;
+        left: 0;
+        bottom: -80px;
     }
 }
-
 
 .profit-text {
     margin-bottom: 4px;
@@ -447,8 +480,7 @@ img {
 }
 
 .profit-date {
-    margin-bottom: 40px;
-    margin-top: -24px;
+    margin-bottom: 0;
 
     letter-spacing: -0.56px;
     text-transform: none;
@@ -522,7 +554,7 @@ img {
 /* СТИЛІ ДЛЯ "МИНУЛИХ УГОД" */
 .past-trades {
     padding-top: 48px;
-    padding-bottom: 53px;
+    padding-bottom: 99px;
 }
 
 @media screen and (min-width:1300px) {
@@ -673,14 +705,15 @@ img {
 /* СТИЛІ ДЛЯ "ПРО КОМПАНІЮ" */
 .about {
     position: relative;
+    padding-top: 80px;
 
     background-color: #FFFFFF;
 }
 
 @media screen and (min-width:1300px) {
     .about {
-        padding-top: 56px;
-        padding-bottom: 92px;
+        padding-top: 92px;
+        padding-bottom: 96px;
     }
 }
 
@@ -692,19 +725,45 @@ img {
     }
 }
 
+.about .wrapper-position {
+    position: relative;
+}
+
+.about .wrapper-img {
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+}
+
+@media screen and (min-width:1300px) {
+    .about .wrapper-img {
+        position: static;
+    }
+
+}
+
+/* @media screen and (min-width:1300px) {
+    .profit .wrapper-img {
+        position: relative;
+
+        min-width: 639px
+    }
+} */
+
+
 .about .title {
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
     color: #030718;
 }
 
 @media screen and (min-width:1300px) {
     .about .title {
-        margin-bottom: 40px;
+        position: static;
 
-        font-size: 44px;
-        line-height: 1.27;
-        letter-spacing: -1.76px;
+        margin-bottom: 40px;
     }
 }
 
