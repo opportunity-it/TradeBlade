@@ -63,7 +63,7 @@
         <button
           type="button"
           class="button js-open-menu open-button"
-          aria-controls="mobile-menu"
+          aria-controls="burger-menu"
           aria-expanded="false"
         >
           <svg
@@ -75,7 +75,7 @@
             <use href="./img/sprite.svg#burger-open"></use>
           </svg>
         </button>
-        <div class="burger-container js-menu-container">
+        <div class="burger-container js-menu-container" id="burger-menu">
           <div class="wrapper-close">
             <button class="button button-close js-close-menu">
               <svg class="close-icon" aria-label="кнопка закриття  бургер меню">
@@ -160,25 +160,30 @@
       <!-- Прибуток  -->
       <section class="profit">
         <div class="container profit-container">
-          <div class="title-date">
-            <div class="title-img">
-              <img
-                src="./img/title-profit.png"
-                alt="фон для заголовку"
-                width="272"
-                height="82"
-                class="img-mob"
+          <div class="title-img">
+            <picture>
+              <!-- desktop -->
+              <source
+                media="(min-width: 1300px)"
+                srcset="
+                  ./img/profit-desctop.png    1x,
+                  ./img/profit-desctop@2x.png 2x
+                "
+                type="image/png"
               />
-              <img
-                src="./img/profit-desctop.png"
-                alt="фон перед контентом"
-                width="639"
-                height="60"
-                class="img-desctop"
+              <!-- mobile -->
+              <source
+                media="(min-width: 375px)"
+                srcset="./img/title-profit.png 1x, ./img/title-profit@2x.png 2x"
+                type="image/png"
               />
 
-              <h2 class="title">Цифри</h2>
-            </div>
+              <img src="./img/title-profit.png" alt="фон для заголовку" />
+            </picture>
+            <h2 class="title">Цифри</h2>
+          </div>
+          <div class="title-date">
+            <h2 class="title-desc">Цифри</h2>
             <p class="profit-text profit-date">Вересень 2022</p>
           </div>
           <ul class="list profit-list">
@@ -286,18 +291,32 @@
       <section class="about">
         <div class="container about-container">
           <div>
-            <div class="wrapper-position">
-              <div class="wrapper-img">
-                <img
-                  src="./img/title-profit.png"
-                  alt="фон для заголовку"
-                  width="292"
-                  height="82"
-                  class="img-mob"
+            <div class="wrapper-img">
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    ./img/profit-desctop.png    1x,
+                    ./img/profit-desctop@2x.png 2x
+                  "
+                  type="image/png"
                 />
-                <h2 class="title">Про компанію</h2>
-              </div>
+                <!-- mobile -->
+                <source
+                  media="(min-width: 375px)"
+                  srcset="
+                    ./img/title-profit.png    1x,
+                    ./img/title-profit@2x.png 2x
+                  "
+                  type="image/png"
+                />
+
+                <img src="./img/title-profit.png" alt="фон для заголовку" />
+              </picture>
+              <h2 class="title">Про компанію</h2>
             </div>
+            <h2 class="title-desc">Про компанію</h2>
             <p class="text">
               Ми є досвідченою командою, для якої трейдинг – професія.
               TradeBlade є авторизованим офіційним брокером біржі Binance.
@@ -524,7 +543,7 @@
         </div>
         <div class="icon-copyright">
           <a href="" class="link-icon">
-            <svg width="165" height="80" c>
+            <svg width="165" height="80">
               <use href="./img/sprite.svg#logo-footer-mob"></use>
             </svg>
           </a>

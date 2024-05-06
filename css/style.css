@@ -41,7 +41,9 @@ p {
 }
 
 @media screen and (min-width:1300px) {
-    .title {
+
+    .title,
+    .title-desc {
         font-size: 44px;
         line-height: 1.27;
         letter-spacing: -1.76px;
@@ -402,7 +404,7 @@ img {
 
 @media screen and (min-width:1300px) {
     .profit {
-        padding-top: 65px;
+        padding-top: 56px;
         padding-bottom: 61px;
     }
 }
@@ -425,21 +427,8 @@ img {
 
 @media screen and (min-width:1300px) {
     .profit .title-img {
-        position: relative;
-
-        min-width: 639px
-    }
-}
-
-@media screen and (min-width:1300px) {
-    .img-mob {
-        display: none;
-    }
-}
-
-@media screen and (max-width:1299.99px) {
-    .img-desctop {
-        display: none;
+        left: 0;
+        top: -116px;
     }
 }
 
@@ -451,8 +440,6 @@ img {
     .profit .title-date {
         margin-bottom: 0;
         margin-right: 157px;
-
-        max-width: 169px;
     }
 }
 
@@ -464,8 +451,24 @@ img {
 
 @media screen and (min-width:1300px) {
     .profit .title {
-        left: 0;
-        bottom: -80px;
+        /* left: 0;
+        bottom: -80px; */
+        display: none;
+    }
+}
+
+@media screen and (max-width:1299.99px) {
+    .profit .title-desc {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .profit .title-desc {
+        margin-bottom: 4px;
+
+        display: block;
+        text-transform: uppercase;
     }
 }
 
@@ -486,12 +489,6 @@ img {
     text-transform: none;
 
     color: rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (min-width:1300px) {
-    .profit-date {
-        margin-bottom: 0;
-    }
 }
 
 .profit .amount {
@@ -520,13 +517,16 @@ img {
 .profit-item:nth-child(1) {
     margin-right: 33px;
     margin-bottom: 32px;
+
     max-width: 147px;
 }
 
 @media screen and (min-width:1300px) {
     .profit-item:nth-child(1) {
-        max-width: 196px;
         margin-right: 129px;
+        margin-bottom: 0;
+
+        max-width: 196px;
     }
 }
 
@@ -704,7 +704,6 @@ img {
 
 /* СТИЛІ ДЛЯ "ПРО КОМПАНІЮ" */
 .about {
-    position: relative;
     padding-top: 80px;
 
     background-color: #FFFFFF;
@@ -712,9 +711,14 @@ img {
 
 @media screen and (min-width:1300px) {
     .about {
-        padding-top: 92px;
+        padding-top: 56px;
         padding-bottom: 96px;
     }
+}
+
+
+.about-container {
+    position: relative;
 }
 
 @media screen and (min-width:1300px) {
@@ -725,45 +729,48 @@ img {
     }
 }
 
-.about .wrapper-position {
-    position: relative;
-}
-
 .about .wrapper-img {
     position: absolute;
-    bottom: 22px;
+    top: -104px;
     left: 0;
 }
 
 @media screen and (min-width:1300px) {
     .about .wrapper-img {
-        position: static;
+        top: -116px;
     }
-
 }
 
-/* @media screen and (min-width:1300px) {
-    .profit .wrapper-img {
-        position: relative;
-
-        min-width: 639px
+@media screen and (max-width:1299.99px) {
+    .about .title-desc {
+        display: none;
     }
-} */
+}
 
+@media screen and (min-width:1300px) {
+    .about .title-desc {
+        margin-bottom: 40px;
+
+        display: block;
+
+        text-transform: uppercase;
+    }
+}
 
 .about .title {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 16px;
 
     color: #030718;
 }
 
 @media screen and (min-width:1300px) {
     .about .title {
-        position: static;
+        /* position: static;
 
-        margin-bottom: 40px;
+        margin-bottom: 40px; */
+        display: none;
     }
 }
 
