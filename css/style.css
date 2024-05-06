@@ -1,6 +1,8 @@
 /* ЗАГАЛЬНІ СТИЛІ  */
 body {
     font-family: "IBM Plex Sans", sans-serif;
+
+    background-color: #030718;
 }
 
 .button {
@@ -46,7 +48,7 @@ p {
 
     max-width: 375px;
 
-    background-color: #030718;
+    outline: 1px solid red;
 }
 
 @media screen and (min-width:1300px) {
@@ -67,7 +69,7 @@ p {
 }
 
 /* СТИЛІ ДЛЯ ХЕДЕРУ  */
-.header-mob {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,12 +183,12 @@ p {
     box-shadow: 0px 0px 4px 0px #57E1FF;
 }
 
-.header-mob .nav-list {
+.header .nav-list {
     display: none;
 }
 
 @media screen and (min-width:1300px) {
-    .header-mob .nav-list {
+    .header .nav-list {
         margin-left: 129px;
 
         display: flex;
@@ -794,8 +796,6 @@ p {
 .tariffs {
     padding-top: 180px;
     padding-bottom: 44px;
-
-    background-color: #030718;
 }
 
 @media screen and (min-width:1300px) {
@@ -1189,18 +1189,16 @@ p {
 }
 
 /* СТИЛІ ДЛЯ ФУТЕРА */
-.footer-container {
+.footer {
     position: relative;
 
     padding-top: 40px;
     padding-bottom: 20px;
-
-    background-color: #030718;
 }
 
 
 @media screen and (min-width:1300px) {
-    .footer-container {
+    .footer {
         padding-top: 28px;
         padding-bottom: 45px;
 
@@ -1209,7 +1207,7 @@ p {
     }
 }
 
-.footer-container .text-link {
+.footer .text-link {
     padding-bottom: 55px;
 
     display: flex;
@@ -1217,14 +1215,14 @@ p {
 }
 
 @media screen and (min-width:1300px) {
-    .footer-container .text-link {
+    .footer .text-link {
         padding-bottom: 0;
 
         flex-direction: column;
     }
 }
 
-.footer-container .link-icon {
+.footer .link-icon {
     padding-top: 22px;
     margin-bottom: 81px;
 
@@ -1232,12 +1230,12 @@ p {
 }
 
 @media screen and (min-width:1300px) {
-    .footer-container .link-icon {
+    .footer .link-icon {
         padding-top: 0;
     }
 }
 
-.footer-container .link-icon::before {
+.footer .link-icon::before {
     position: absolute;
     left: 0;
     bottom: 226px;
@@ -1251,7 +1249,7 @@ p {
 }
 
 @media screen and (min-width:1300px) {
-    .footer-container .link-icon::before {
+    .footer .link-icon::before {
         display: none;
     }
 }
@@ -1272,7 +1270,7 @@ p {
     }
 }
 
-.footer-container .footer-list,
+.footer .footer-list,
 .burger-list {
     display: flex;
     flex-direction: column;
@@ -1280,7 +1278,7 @@ p {
 }
 
 @media screen and (min-width:1300px) {
-    .footer-container .footer-list {
+    .footer .footer-list {
         flex-direction: row;
     }
 }
@@ -1295,7 +1293,7 @@ p {
 }
 
 @media screen and (min-width:1300px) {
-    .footer-container .icon-copyright::before {
+    .footer .icon-copyright::before {
         position: absolute;
         top: 0;
         right: 410px;
