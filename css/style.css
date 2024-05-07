@@ -1296,8 +1296,6 @@ img {
 
 /* СТИЛІ ДЛЯ ФУТЕРА */
 .footer {
-    position: relative;
-
     padding-top: 40px;
     padding-bottom: 20px;
 }
@@ -1308,6 +1306,10 @@ img {
         padding-top: 28px;
         padding-bottom: 45px;
     }
+}
+
+.footer-container {
+    position: relative;
 }
 
 @media screen and (min-width:1300px) {
@@ -1425,7 +1427,7 @@ img {
 
 .copyright::after {
     position: absolute;
-    bottom: 0;
+    bottom: -45px;
     left: 0;
     content: "";
 
