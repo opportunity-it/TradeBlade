@@ -61,8 +61,6 @@ img {
     padding-left: 16px;
 
     max-width: 375px;
-
-    outline: 1px solid red;
 }
 
 @media screen and (min-width:1300px) {
@@ -567,6 +565,10 @@ img {
     }
 }
 
+.trades-container {
+    position: relative;
+}
+
 .trade-title {
     margin-bottom: 2px;
 
@@ -613,7 +615,7 @@ img {
 .past-trades .card {
     padding: 16px 16px 13px 16px;
 
-    /* width: 299px; */
+    width: 299px;
 
     background-image: url("../img/bg-past-trades-mob.png"), url("../img/bg-card.png");
     background-repeat: no-repeat;
@@ -906,9 +908,14 @@ img {
 
 @media screen and (min-width:1300px) {
     .tariffs {
-        padding-left: 220px;
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .tariffs-container {
+        padding-left: 220px;
     }
 }
 
@@ -1186,8 +1193,13 @@ img {
 @media screen and (min-width:1300px) {
     .common-questions {
         padding-top: 96px;
-        padding-left: 220px;
         padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .questions-container {
+        padding-left: 220px;
     }
 }
 
