@@ -606,14 +606,14 @@ img {
 @media screen and (min-width:1300px) {
     .wrapper-card {
         display: flex;
-        gap: 20px;
+        /* gap: 20px; */
     }
 }
 
 .past-trades .card {
     padding: 16px 16px 13px 16px;
 
-    width: 299px;
+    /* width: 299px; */
 
     background-image: url("../img/bg-past-trades-mob.png"), url("../img/bg-card.png");
     background-repeat: no-repeat;
