@@ -4,6 +4,6 @@ var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     scrollbar: {
         el: ".swiper-scrollbar",
-        clickable: true,
+        hide: true,
     },
 });

@@ -1,8 +1,6 @@
 /* ЗАГАЛЬНІ СТИЛІ  */
 body {
     font-family: "IBM Plex Sans", sans-serif;
-
-    background-color: #030718;
 }
 
 .button {
@@ -69,6 +67,16 @@ img {
         padding-right: 10px;
         padding-left: 10px;
     }
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1440px;
+    height: 100%;
+
+    background-color: #030718;
 }
 
 .text {
@@ -425,7 +433,7 @@ img {
 
 @media screen and (min-width:1300px) {
     .profit .title-img {
-        left: 0;
+        left: -80px;
         top: -116px;
     }
 }
@@ -605,12 +613,12 @@ img {
     border-radius: 50%;
 }
 
-@media screen and (min-width:1300px) {
-    .wrapper-card {
-        display: flex;
-        /* gap: 20px; */
-    }
+.swiper-wrapper.wrapper-card {
+    display: flex;
+    gap: 20px;
+
 }
+
 
 .past-trades .card {
     padding: 16px 16px 13px 16px;
@@ -622,15 +630,26 @@ img {
     background-position: 100% 8px;
 }
 
-.past-trades .card:not(:first-child) {
-    display: none;
+.swiper-slide.card {
+    width: 299px !important;
+    margin-right: 0 !important;
 }
 
-@media screen and (min-width:1300px) {
+.swiper-scrollbar {
+    border-radius: 56px;
+    background-color: rgba(67, 79, 112, 0.4);
+    background-color: red;
+}
+
+/* .past-trades .card:not(:first-child) {
+    display: none;
+} */
+
+/* @media screen and (min-width:1300px) {
     .past-trades .card:not(:first-child) {
         display: block;
     }
-}
+} */
 
 .card .near-spot {
     margin-bottom: 48px;
@@ -740,6 +759,7 @@ img {
 @media screen and (min-width:1300px) {
     .about .wrapper-img {
         top: -116px;
+        left: -80px;
     }
 }
 
@@ -1439,7 +1459,7 @@ img {
 
 .copyright::after {
     position: absolute;
-    bottom: -45px;
+    bottom: -20px;
     left: 0;
     content: "";
 
@@ -1448,4 +1468,10 @@ img {
     display: block;
 
     background-color: #6A54FF;
+}
+
+@media screen and (min-width:1300px) {
+    .copyright::after {
+        bottom: -45px;
+    }
 }
