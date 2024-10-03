@@ -1,527 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeBlade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TradeBlade</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <!-- Хедер -->
-  <header class="section header">
-    <div class="container header-container">
-      <nav class="navigation-header">
-        <a href="" class="header-link">
-          <svg width="107" height="52">
-            <use href="./img/sprite.svg#logo-header-mob"></use>
-          </svg>
-        </a>
-        <ul class="list nav-list">
-          <li><a href="" class="nav-link">цифри</a></li>
-          <li><a href="" class="nav-link">угоди онлайн</a></li>
-          <li><a href="" class="nav-link">про компанію</a></li>
-          <li><a href="" class="nav-link">як почати</a></li>
-          <li><a href="" class="nav-link">тарифи</a></li>
-          <li><a href="" class="nav-link">відгуки</a></li>
-          <li><a href="" class="nav-link">FAQ</a></li>
-        </ul>
-      </nav>
-      <ul class="list buttons-list">
-        <li>
-          <button type="button" class="button button-enter header">
-            вхід
-          </button>
-        </li>
-        <li>
-          <button type="button" class="button button-enter button-registration header">
-            реєстрація
-          </button>
-        </li>
-      </ul>
-      <!-- Бургер меню -->
-      <button type="button" class="button js-open-menu open-button" aria-controls="burger-menu" aria-expanded="false">
-        <svg aria-label="кнопка відкриття  бургер меню" class="open-icon" width="32" height="32">
-          <use href="./img/sprite.svg#burger-open"></use>
-        </svg>
-      </button>
-      <div class="burger-container js-menu-container" id="burger-menu">
-        <div class="wrapper-close">
-          <button class="button button-close js-close-menu">
-            <svg class="close-icon" aria-label="кнопка закриття  бургер меню">
-              <use href="./img/sprite.svg#burger-close"></use>
+  <body>
+    <!-- Хедер -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation-header">
+          <a href="" class="header-link">
+            <svg width="107" height="52">
+              <use href="./img/sprite.svg#logo-header-mob"></use>
             </svg>
-          </button>
-        </div>
-        <ul class="list burger-list">
-          <li><a href="" class="burger-link">Цифри</a></li>
+          </a>
+          <ul class="list nav-list">
+            <li><a href="" class="nav-link">цифри</a></li>
+            <li><a href="" class="nav-link">угоди онлайн</a></li>
+            <li><a href="" class="nav-link">про компанію</a></li>
+            <li><a href="" class="nav-link">як почати</a></li>
+            <li><a href="" class="nav-link">тарифи</a></li>
+            <li><a href="" class="nav-link">відгуки</a></li>
+            <li><a href="" class="nav-link">FAQ</a></li>
+          </ul>
+        </nav>
+        <ul class="list buttons-list">
           <li>
-            <a href="" class="burger-link">Угоди онлайн</a>
+            <button type="button" class="button button-enter header">
+              вхід
+            </button>
           </li>
           <li>
-            <a href="" class="burger-link">Про компанію</a>
-          </li>
-          <li>
-            <a href="" class="burger-link">tradeblad це</a>
-          </li>
-          <li>
-            <a href="" class="burger-link">як почати</a>
-          </li>
-          <li><a href="" class="burger-link">тарифи</a></li>
-          <li><a href="" class="burger-link">FAQ</a></li>
-        </ul>
-        <ul class="list enter-registration">
-          <li>
-            <button type="button" class="button-enter">реєстрація</button>
-          </li>
-          <li>
-            <button type="button" class="button-enter button-registration">
-              увійти
+            <button
+              type="button"
+              class="button button-enter button-registration header"
+            >
+              реєстрація
             </button>
           </li>
         </ul>
+        <!-- Бургер меню -->
+        <button
+          type="button"
+          class="button js-open-menu open-button"
+          aria-controls="burger-menu"
+          aria-expanded="false"
+        >
+          <svg
+            aria-label="кнопка відкриття  бургер меню"
+            class="open-icon"
+            width="32"
+            height="32"
+          >
+            <use href="./img/sprite.svg#burger-open"></use>
+          </svg>
+        </button>
+        <div class="burger-container js-menu-container" id="burger-menu">
+          <div class="wrapper-close">
+            <button class="button button-close js-close-menu">
+              <svg class="close-icon" aria-label="кнопка закриття  бургер меню">
+                <use href="./img/sprite.svg#burger-close"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="list burger-list">
+            <li><a href="" class="burger-link">Цифри</a></li>
+            <li>
+              <a href="" class="burger-link">Угоди онлайн</a>
+            </li>
+            <li>
+              <a href="" class="burger-link">Про компанію</a>
+            </li>
+            <li>
+              <a href="" class="burger-link">tradeblad це</a>
+            </li>
+            <li>
+              <a href="" class="burger-link">як почати</a>
+            </li>
+            <li><a href="" class="burger-link">тарифи</a></li>
+            <li><a href="" class="burger-link">FAQ</a></li>
+          </ul>
+          <ul class="list enter-registration">
+            <li>
+              <button type="button" class="button-enter">реєстрація</button>
+            </li>
+            <li>
+              <button type="button" class="button-enter button-registration">
+                увійти
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <!-- Герой  -->
-    <section class="section hero">
-      <div class="container">
-        <div class="img-title">
-          <picture>
-            <!-- desktop -->
-            <source media="(min-width: 1300px)" srcset="./img/img-hero.png 1x, ./img/img-hero-desc2x.png 2x"
+    </header>
+    <main>
+      <!-- Герой  -->
+      <section class="hero">
+        <div class="container">
+          <div class="img-title">
+            <!-- <picture>
+            desktop
+            <source media="(min-width: 1200px)" srcset="./img/img-hero.png 1x, ./img/img-hero-desc2x.png 2x"
               type="image/png" />
-            <!-- mobile -->
-            <source media="(min-width: 375px)" srcset="./img/img-hero-mob.png 1x, ./img/img-hero-mob2x.png 2x"
-              type="image/png" />
-            <img src="./img/img-hero-mob.png" alt="угоди професійних трейдерів" />
-          </picture>
-
-          <h1 class="hero-title animate__animated animate__backInLeft">
-            моментально копіюй угоди профі трейдерів
-          </h1>
+                       <img src="./img/img-hero-mob.png" alt="угоди професійних трейдерів" />
+          </picture> -->
+            <ul class="list hero-cards">
+              <li class="hero-card">
+                <h2 class="card-title">EtH/USDT</h2>
+                <p class="state shade-first">Short</p>
+                <p class="percent">+141%</p>
+                <svg
+                  class="card-icon icon-up"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path opacity="0.7" d="M1 1L22 22" stroke="#6A54FF" />
+                </svg>
+              </li>
+              <li class="hero-card">
+                <h2 class="card-title">EtH/USDT</h2>
+                <p class="state shade-second">Short</p>
+                <p class="percent">+116%</p>
+                <svg
+                  class="card-icon icon-down"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path opacity="0.7" d="M1 1L22 22" stroke="#6A54FF" />
+                </svg>
+              </li>
+            </ul>
+            <h1 class="hero-title animate__animated animate__backInLeft">
+              моментально копіюй угоди профі трейдерів
+            </h1>
+          </div>
+          <p class="hero-text animate__animated animate__backInUp">
+            Почни копіювати угоди з успішною командою професійних трейдерів у
+            автоматичний режим.
+          </p>
+          <form name="form_hero" class="hero-form">
+            <input
+              type="email"
+              name="email"
+              class="input-email"
+              placeholder="Ваш e–mail"
+            />
+            <button type="submit" class="button button-form">почати</button>
+          </form>
+          <p class="after-form">5 днів безкоштовного користування</p>
         </div>
-        <p class="hero-text animate__animated animate__backInUp">
-          Почни копіювати угоди з успішною командою професійних трейдерів у
-          автоматичний режим.
-        </p>
-        <form name="form_hero" class="hero-form">
-          <input type="email" name="email" class="input-email" placeholder="Ваш e–mail" />
-          <button type="submit" class="button button-form">почати</button>
-        </form>
-        <p class="after-form">5 днів безкоштовного користування</p>
-      </div>
-    </section>
-    <!-- Прибуток  -->
-    <section class="section profit">
-      <div class="container profit-container">
-        <div class="title-img">
-          <picture>
-            <!-- desktop -->
-            <source media="(min-width: 1300px)" srcset="
-                  ./img/profit-desctop.png    1x,
-                  ./img/profit-desctop@2x.png 2x
-                " type="image/png" />
-            <!-- mobile -->
-            <source media="(min-width: 375px)" srcset="./img/title-profit.png 1x, ./img/title-profit@2x.png 2x"
-              type="image/png" />
-
-            <img src="./img/title-profit.png" alt="фон для заголовку" />
-          </picture>
-          <h2 class="title">Цифри</h2>
-        </div>
-        <div class="title-date">
-          <h2 class="title-desc">Цифри</h2>
-          <p class="profit-text profit-date">Вересень 2022</p>
-        </div>
-        <ul class="list profit-list">
-          <li class="profit-item">
-            <p class="profit-text">Торгового прибутку</p>
-            <p class="amount">2756%</p>
-          </li>
-          <li class="profit-item">
-            <p class="profit-text">ф'ючерсних та спотових угод</p>
-            <p class="amount">67</p>
-          </li>
-          <li class="profit-item">
-            <p class="profit-text">прибуток підписників</p>
-            <p class="amount">375000</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Минулі угоди -->
-    <section class="section past-trades">
-      <div class="container trades-container">
-        <h2 class="title trade-title">минулі угоди</h2>
-        <p class="trade-status">Онлайн</p>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper wrapper-card">
-            <div class="swiper-slide card">
-              <div class="near-spot">
-                <h3 class="sub-title">NEAR/USDT</h3>
-                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
-              </div>
-              <div class="profit-percent">
-                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
-                <p class="trade-percent">
-                  58.6206%
-                  <svg width="9" height="16" class="trade-icon">
-                    <use href="./img/sprite.svg#arrow-top"></use>
-                  </svg>
-                </p>
-              </div>
-              <div class="goal-date">
-                <p class="trade-text opacity-second">Ціль 4</p>
-                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
-              </div>
-            </div>
-            <div class="swiper-slide card">
-              <div class="near-spot">
-                <h3 class="sub-title">NEAR/USDT</h3>
-                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
-              </div>
-              <div class="profit-percent">
-                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
-                <p class="trade-percent">
-                  58.6206%
-                  <svg width="9" height="16" class="trade-icon">
-                    <use href="./img/sprite.svg#arrow-top"></use>
-                  </svg>
-                </p>
-              </div>
-              <div class="goal-date">
-                <p class="trade-text opacity-second">Ціль 4</p>
-                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
-              </div>
-            </div>
-            <div class="swiper-slide card">
-              <div class="near-spot">
-                <h3 class="sub-title">NEAR/USDT</h3>
-                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
-              </div>
-              <div class="profit-percent">
-                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
-                <p class="trade-percent">
-                  58.6206%
-                  <svg width="9" height="16" class="trade-icon">
-                    <use href="./img/sprite.svg#arrow-top"></use>
-                  </svg>
-                </p>
-              </div>
-              <div class="goal-date">
-                <p class="trade-text opacity-second">Ціль 4</p>
-                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
-              </div>
-            </div>
-            <div class="swiper-slide card">
-              <div class="near-spot">
-                <h3 class="sub-title">NEAR/USDT</h3>
-                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
-              </div>
-              <div class="profit-percent">
-                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
-                <p class="trade-percent">
-                  58.6206%
-                  <svg width="9" height="16" class="trade-icon">
-                    <use href="./img/sprite.svg#arrow-top"></use>
-                  </svg>
-                </p>
-              </div>
-              <div class="goal-date">
-                <p class="trade-text opacity-second">Ціль 4</p>
-                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
-              </div>
-            </div>
-            <div class="swiper-slide card">
-              <div class="near-spot">
-                <h3 class="sub-title">NEAR/USDT</h3>
-                <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
-              </div>
-              <div class="profit-percent">
-                <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
-                <p class="trade-percent">
-                  58.6206%
-                  <svg width="9" height="16" class="trade-icon">
-                    <use href="./img/sprite.svg#arrow-top"></use>
-                  </svg>
-                </p>
-              </div>
-              <div class="goal-date">
-                <p class="trade-text opacity-second">Ціль 4</p>
-                <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
-              </div>
-            </div>
-                      </div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-      </div>
-      </div>
-    </section>
-    <!-- Про компанію  -->
-    <section class="section about">
-      <div class="container about-container">
-        <div>
-          <div class="wrapper-img">
+      </section>
+      <!-- Прибуток  -->
+      <section class="profit">
+        <div class="container profit-container">
+          <div class="title-img">
             <picture>
               <!-- desktop -->
-              <source media="(min-width: 1300px)" srcset="
-                    ./img/profit-desctop.png    1x,
-                    ./img/profit-desctop@2x.png 2x
-                  " type="image/png" />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./img/profit-desctop.png    1x,
+                  ./img/profit-desctop@2x.png 2x
+                "
+                type="image/png"
+              />
               <!-- mobile -->
-              <source media="(min-width: 375px)" srcset="
-                    ./img/title-profit.png    1x,
-                    ./img/title-profit@2x.png 2x
-                  " type="image/png" />
+              <source
+                media="(min-width: 375px)"
+                srcset="./img/title-profit.png 1x, ./img/title-profit@2x.png 2x"
+                type="image/png"
+              />
 
               <img src="./img/title-profit.png" alt="фон для заголовку" />
             </picture>
-            <h2 class="title">Про компанію</h2>
+            <h2 class="title">Цифри</h2>
           </div>
-          <h2 class="title-desc">Про компанію</h2>
-          <p class="text">
-            Ми є досвідченою командою, для якої трейдинг – професія.
-            TradeBlade є авторизованим офіційним брокером біржі Binance.
-            <span class="text-secondary">Він надає користувачам безліч переваг, таких як більше висока
-              швидкість синхронізації API та можливість створити обліковий
-              запис Binance через платформу TradeBlade всього в 1 клік.</span>
-          </p>
+          <div class="title-date">
+            <h2 class="title-desc">Цифри</h2>
+            <p class="profit-text profit-date">Вересень 2022</p>
+          </div>
+          <ul class="list profit-list">
+            <li class="profit-item">
+              <p class="profit-text">Торгового прибутку</p>
+              <p class="amount">2756%</p>
+            </li>
+            <li class="profit-item">
+              <p class="profit-text">ф'ючерсних та спотових угод</p>
+              <p class="amount">67</p>
+            </li>
+            <li class="profit-item">
+              <p class="profit-text">прибуток підписників</p>
+              <p class="amount">375000</p>
+            </li>
+          </ul>
         </div>
-        <form class="about-form" name="about_form">
-          <strong class="form-text">Спробуйте зараз та отримайте 5 днів безкоштовного
-            користування</strong>
-          <div class="input-form">
-            <input type="email" placeholder="ваш e-mail" class="input-email input-about" />
-            <button type="submit" class="button-form">спробувати</button>
+      </section>
+      <!-- Минулі угоди -->
+      <section class="past-trades">
+        <div class="container trades-container">
+          <h2 class="title trade-title">минулі угоди</h2>
+          <p class="trade-status">Онлайн</p>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper wrapper-card">
+              <div class="swiper-slide card">
+                <div class="near-spot">
+                  <h3 class="sub-title">NEAR/USDT</h3>
+                  <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+                </div>
+                <div class="profit-percent">
+                  <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                  <p class="trade-percent">
+                    58.6206%
+                    <svg width="9" height="16" class="trade-icon">
+                      <use href="./img/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="goal-date">
+                  <p class="trade-text opacity-second">Ціль 4</p>
+                  <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="near-spot">
+                  <h3 class="sub-title">NEAR/USDT</h3>
+                  <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+                </div>
+                <div class="profit-percent">
+                  <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                  <p class="trade-percent">
+                    58.6206%
+                    <svg width="9" height="16" class="trade-icon">
+                      <use href="./img/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="goal-date">
+                  <p class="trade-text opacity-second">Ціль 4</p>
+                  <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="near-spot">
+                  <h3 class="sub-title">NEAR/USDT</h3>
+                  <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+                </div>
+                <div class="profit-percent">
+                  <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                  <p class="trade-percent">
+                    58.6206%
+                    <svg width="9" height="16" class="trade-icon">
+                      <use href="./img/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="goal-date">
+                  <p class="trade-text opacity-second">Ціль 4</p>
+                  <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="near-spot">
+                  <h3 class="sub-title">NEAR/USDT</h3>
+                  <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+                </div>
+                <div class="profit-percent">
+                  <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                  <p class="trade-percent">
+                    58.6206%
+                    <svg width="9" height="16" class="trade-icon">
+                      <use href="./img/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="goal-date">
+                  <p class="trade-text opacity-second">Ціль 4</p>
+                  <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="near-spot">
+                  <h3 class="sub-title">NEAR/USDT</h3>
+                  <p class="trade-text opacity-first">SPOT · 1 хв. тому</p>
+                </div>
+                <div class="profit-percent">
+                  <p class="trade-text trade-profit opacity-second">ПРИБУТОК</p>
+                  <p class="trade-percent">
+                    58.6206%
+                    <svg width="9" height="16" class="trade-icon">
+                      <use href="./img/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="goal-date">
+                  <p class="trade-text opacity-second">Ціль 4</p>
+                  <p class="trade-text opacity-first">Дата входу 06.10.2022</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
-    <!-- Тарифи -->
-    <section class="section tariffs">
-      <div class="container tariffs-container">
-        <h2 class="title tarrifs-title">тарифи</h2>
-        <ul class="list buttons-wrapper">
-          <li>
-            <button type="button" class="button button-basic button-spot">
-              СПОТ
-            </button>
-          </li>
-          <li>
-            <button type="button" class="button button-basic">Ф'ючерс</button>
-          </li>
-        </ul>
-        <ul class="list tariffs-list">
-          <li class="tariffs-item">
-            <h3 class="sub-title">STANDART</h3>
-            <ul class="list standart-list">
-              <li class="standart-item">
-                <svg width="12" height="12" class="standart-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">Ручний трейдинг</p>
-              </li>
-              <li class="standart-item">
-                <svg width="12" height="12" class="standart-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">
-                  Автоматичне або напівавтоматичне копіювання угод
-                </p>
-              </li>
-              <li class="standart-item">
-                <svg width="12" height="12" class="standart-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">Особистий кабінет зі статистикою</p>
-              </li>
-              <li class="standart-item">
-                <svg width="12" height="12" class="standart-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">
-                  Середньострокові угоди з рівнями набору портфеля
-                </p>
-              </li>
-            </ul>
-            <div class="price-button">
-              <p class="tariffs-price">$234</p>
-              <button type="button" class="button tariffs-button">
-                12 місяців
-                <svg class="icon month-icon">
-                  <use href="./img/sprite.svg#checkbox-down"></use>
-                </svg>
-              </button>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <!-- Про компанію  -->
+      <section class="about">
+        <div class="container about-container">
+          <div>
+            <div class="wrapper-img">
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/profit-desctop.png    1x,
+                    ./img/profit-desctop@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <source
+                  media="(min-width: 375px)"
+                  srcset="
+                    ./img/title-profit.png    1x,
+                    ./img/title-profit@2x.png 2x
+                  "
+                  type="image/png"
+                />
+
+                <img src="./img/title-profit.png" alt="фон для заголовку" />
+              </picture>
+              <h2 class="title">Про компанію</h2>
             </div>
-            <a href="" class="tariffs-link">
-              <p class="text-try">Спробувати</p>
-              <p class="text-free">5 днів безкоштовно</p>
-            </a>
-          </li>
-          <li class="tariffs-item vip">
-            <h3 class="sub-title">VIP</h3>
-            <ul class="list vip-list">
-              <li class="vip-item">
-                <svg width="12" height="12" class="vip-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">Ручний трейдинг</p>
-              </li>
-              <li class="vip-item">
-                <svg width="12" height="12" class="vip-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">
-                  Автоматичне або напівавтоматичне копіювання угод
-                </p>
-              </li>
-              <li class="vip-item">
-                <svg width="12" height="12" class="vip-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">Особистий кабінет зі статистикою</p>
-              </li>
-              <li class="vip-item">
-                <svg width="12" height="12" class="vip-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">
-                  Короткострокові, середньострокові та інвест угоди
-                </p>
-              </li>
-              <li class="vip-item">
-                <svg width="12" height="12" class="vip-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">Доступ до Vip чату з командою</p>
-              </li>
-              <li class="vip-item">
-                <svg width="12" height="12" class="vip-icon">
-                  <use href="./img/sprite.svg#checkbox"></use>
-                </svg>
-                <p class="tariffs-text">Наш авторський курс з трейдингу</p>
-              </li>
-            </ul>
-            <div class="price-button">
-              <p class="tariffs-price">$585</p>
-              <button type="button" class="button tariffs-button">
-                12 місяців
-                <svg class="icon month-icon">
-                  <use href="./img/sprite.svg#checkbox-down"></use>
-                </svg>
-              </button>
-            </div>
-            <a href="" class="tariffs-link">
-              <p class="text-try">Спробувати</p>
-              <p class="text-free">5 днів безкоштовно</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Поширені запитання -->
-    <section class="section common-questions">
-      <div class="container questions-container">
-        <h2 class="title questions-title">поширені запитання</h2>
-        <ul class="list question-list">
-          <li class="questions-item">
-            <div class="title-color">
-              <h3 class="sub-title">Що таке TradeBlade</h3>
-              <button type="button" class="button questions-button">
-                <svg class="icon">
-                  <use href="./img/sprite.svg#checkbox-top"></use>
-                </svg>
-              </button>
-            </div>
+            <h2 class="title-desc">Про компанію</h2>
             <p class="text">
               Ми є досвідченою командою, для якої трейдинг – професія.
               TradeBlade є авторизованим офіційним брокером біржі Binance.
-              <span class="text-first">
-                Він надає користувачам безліч переваг, таких як більш висока
+              <span class="text-secondary"
+                >Він надає користувачам безліч переваг, таких як більше висока
                 швидкість синхронізації API та можливість створити обліковий
-                запис Binance через платформу TradeBlade всього в 1
-                клік.</span>
+                запис Binance через платформу TradeBlade всього в 1 клік.</span
+              >
             </p>
-          </li>
-          <li class="questions-item">
-            <div class="title-color">
-              <h3 class="sub-title dark-color">
-                Що TradeBlade пропонує інвесторам
-              </h3>
-              <button type="button" class="button questions-button black">
-                <svg class="icon questions-icon">
-                  <use href="./img/sprite.svg#checkbox-down"></use>
-                </svg>
-              </button>
+          </div>
+          <form class="about-form" name="about_form">
+            <strong class="form-text"
+              >Спробуйте зараз та отримайте 5 днів безкоштовного
+              користування</strong
+            >
+            <div class="input-form">
+              <input
+                type="email"
+                placeholder="ваш e-mail"
+                class="input-email input-about"
+              />
+              <button type="submit" class="button-form">спробувати</button>
             </div>
-          </li>
-          <li class="questions-item">
-            <div class="title-color">
-              <h3 class="sub-title dark-color">
-                Чи повинен я переказати свої кошти на TradeBlade
-              </h3>
-              <button type="button" class="button questions-button black">
-                <svg class="icon questions-icon">
-                  <use href="./img/sprite.svg#checkbox-down"></use>
-                </svg>
+          </form>
+        </div>
+      </section>
+      <!-- Тарифи -->
+      <section class="tariffs">
+        <div class="container tariffs-container">
+          <h2 class="title tarrifs-title">тарифи</h2>
+          <ul class="list buttons-wrapper">
+            <li>
+              <button type="button" class="button button-basic button-spot">
+                СПОТ
               </button>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <button type="button" class="button button-basic">Ф'ючерс</button>
+            </li>
+          </ul>
+          <ul class="list tariffs-list">
+            <li class="tariffs-item">
+              <h3 class="sub-title">STANDART</h3>
+              <ul class="list standart-list">
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">Ручний трейдинг</p>
+                </li>
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">
+                    Автоматичне або напівавтоматичне копіювання угод
+                  </p>
+                </li>
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">Особистий кабінет зі статистикою</p>
+                </li>
+                <li class="standart-item">
+                  <svg width="12" height="12" class="standart-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">
+                    Середньострокові угоди з рівнями набору портфеля
+                  </p>
+                </li>
+              </ul>
+              <div class="price-button">
+                <p class="tariffs-price">$234</p>
+                <button type="button" class="button tariffs-button">
+                  12 місяців
+                  <svg class="icon month-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <a href="" class="tariffs-link">
+                <p class="text-try">Спробувати</p>
+                <p class="text-free">5 днів безкоштовно</p>
+              </a>
+            </li>
+            <li class="tariffs-item vip">
+              <h3 class="sub-title">VIP</h3>
+              <ul class="list vip-list">
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">Ручний трейдинг</p>
+                </li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">
+                    Автоматичне або напівавтоматичне копіювання угод
+                  </p>
+                </li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">Особистий кабінет зі статистикою</p>
+                </li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">
+                    Короткострокові, середньострокові та інвест угоди
+                  </p>
+                </li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">Доступ до Vip чату з командою</p>
+                </li>
+                <li class="vip-item">
+                  <svg width="12" height="12" class="vip-icon">
+                    <use href="./img/sprite.svg#checkbox"></use>
+                  </svg>
+                  <p class="tariffs-text">Наш авторський курс з трейдингу</p>
+                </li>
+              </ul>
+              <div class="price-button">
+                <p class="tariffs-price">$585</p>
+                <button type="button" class="button tariffs-button">
+                  12 місяців
+                  <svg class="icon month-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <a href="" class="tariffs-link">
+                <p class="text-try">Спробувати</p>
+                <p class="text-free">5 днів безкоштовно</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Поширені запитання -->
+      <section class="common-questions">
+        <div class="container questions-container">
+          <h2 class="title questions-title">поширені запитання</h2>
+          <ul class="list question-list">
+            <li class="questions-item">
+              <div class="title-color">
+                <h3 class="sub-title">Що таке TradeBlade</h3>
+                <button type="button" class="button questions-button">
+                  <svg class="icon">
+                    <use href="./img/sprite.svg#checkbox-top"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="text">
+                Ми є досвідченою командою, для якої трейдинг – професія.
+                TradeBlade є авторизованим офіційним брокером біржі Binance.
+                <span class="text-first">
+                  Він надає користувачам безліч переваг, таких як більш висока
+                  швидкість синхронізації API та можливість створити обліковий
+                  запис Binance через платформу TradeBlade всього в 1
+                  клік.</span
+                >
+              </p>
+            </li>
+            <li class="questions-item">
+              <div class="title-color">
+                <h3 class="sub-title dark-color">
+                  Що TradeBlade пропонує інвесторам
+                </h3>
+                <button type="button" class="button questions-button black">
+                  <svg class="icon questions-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="questions-item">
+              <div class="title-color">
+                <h3 class="sub-title dark-color">
+                  Чи повинен я переказати свої кошти на TradeBlade
+                </h3>
+                <button type="button" class="button questions-button black">
+                  <svg class="icon questions-icon">
+                    <use href="./img/sprite.svg#checkbox-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="text-link">
+          <p class="footer-text">Швидка навігація</p>
+          <ul class="list footer-list">
+            <li><a href="" class="footer-link">Цифри</a></li>
+            <li>
+              <a href="" class="footer-link">Угоди онлайн</a>
+            </li>
+            <li>
+              <a href="" class="footer-link">Про компанію</a>
+            </li>
+            <li>
+              <a href="" class="footer-link">tradeblad це</a>
+            </li>
+            <li>
+              <a href="" class="footer-link">як почати</a>
+            </li>
+            <li><a href="" class="footer-link">тарифи</a></li>
+            <li><a href="" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="icon-copyright">
+          <a href="" class="link-icon">
+            <svg width="165" height="80">
+              <use href="./img/sprite.svg#logo-footer-mob"></use>
+            </svg>
+          </a>
+          <p class="copyright">&#169; 2022 TradeBlade. All rights reserved</p>
+        </div>
       </div>
-    </section>
-  </main>
-  <!-- Футер -->
-  <footer class="section footer">
-    <div class="container footer-container">
-      <div class="text-link">
-        <p class="footer-text">Швидка навігація</p>
-        <ul class="list footer-list">
-          <li><a href="" class="footer-link">Цифри</a></li>
-          <li>
-            <a href="" class="footer-link">Угоди онлайн</a>
-          </li>
-          <li>
-            <a href="" class="footer-link">Про компанію</a>
-          </li>
-          <li>
-            <a href="" class="footer-link">tradeblad це</a>
-          </li>
-          <li>
-            <a href="" class="footer-link">як почати</a>
-          </li>
-          <li><a href="" class="footer-link">тарифи</a></li>
-          <li><a href="" class="footer-link">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="icon-copyright">
-        <a href="" class="link-icon">
-          <svg width="165" height="80">
-            <use href="./img/sprite.svg#logo-footer-mob"></use>
-          </svg>
-        </a>
-        <p class="copyright">&#169; 2022 TradeBlade. All rights reserved</p>
-      </div>
-    </div>
-  </footer>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script src="./js/burger-menu.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/slider.js"></script>
-</body>
-
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
 </html>
