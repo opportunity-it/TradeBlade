@@ -74,7 +74,7 @@ img {
 }
 
 .text {
-  line-height: 1.25;
+  line-height: calc(20/16);
 }
 
 .icon {
@@ -439,7 +439,7 @@ img {
 .input-email::placeholder {
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.42;
+  line-height: calc(20/14);
   letter-spacing: -0.14px;
 
   text-transform: uppercase;
@@ -712,9 +712,10 @@ img {
 .past-trades .card {
   padding: 16px 16px 13px 16px;
 
-display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-border-radius: 4px;
+  border-radius: 4px;
 
   background-image: url("../img//icon-trade-card.svg"),
     url("../img/bg-trade-card.svg");
@@ -823,6 +824,7 @@ border-radius: 4px;
 /* СТИЛІ ДЛЯ "ПРО КОМПАНІЮ" */
 .about {
   padding-top: 80px;
+  padding-bottom: 133px;
 
   background-color: #ffffff;
 }
@@ -893,8 +895,6 @@ border-radius: 4px;
 }
 
 .about .text {
-  padding-bottom: 132px;
-
   color: rgba(3, 7, 24, 0.8);
 }
 
@@ -906,13 +906,13 @@ border-radius: 4px;
 }
 
 .about .text-secondary {
-  margin-top: 10px;
+  margin-top: 20px;
   display: block;
 }
 
 .about .about-form {
   position: absolute;
-  bottom: -124px;
+  bottom: -258px;
   left: 50%;
   padding: 16px;
 
@@ -941,8 +941,10 @@ border-radius: 4px;
 
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: calc(28/20);
   letter-spacing: -0.8px;
+
+  text-align: center;
 
   color: #ffffff;
 }
@@ -964,7 +966,7 @@ border-radius: 4px;
   padding-left: 17px;
   padding-right: 0;
 
-  background-color: #000000;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 1200px) {
@@ -985,12 +987,12 @@ border-radius: 4px;
 }
 
 .about-form .button-form {
-  padding: 16px 103px;
+  padding: 16px 24px;
   width: 100%;
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: calc(20/16);
   text-transform: uppercase;
 
   color: #030718;
