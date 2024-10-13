@@ -74,7 +74,7 @@ img {
 }
 
 .text {
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
 }
 
 .icon {
@@ -439,7 +439,7 @@ img {
 .input-email::placeholder {
   font-size: 14px;
   font-weight: 500;
-  line-height: calc(20/14);
+  line-height: calc(20 / 14);
   letter-spacing: -0.14px;
 
   text-transform: uppercase;
@@ -941,7 +941,7 @@ img {
 
   font-size: 20px;
   font-weight: 500;
-  line-height: calc(28/20);
+  line-height: calc(28 / 20);
   letter-spacing: -0.8px;
 
   text-align: center;
@@ -992,7 +992,7 @@ img {
 
   font-size: 16px;
   font-weight: 500;
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
   text-transform: uppercase;
 
   color: #030718;
@@ -1070,7 +1070,7 @@ img {
 
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.33;
+  line-height: calc(24 / 18);
 
   letter-spacing: -0.72px;
   text-transform: uppercase;
@@ -1100,11 +1100,10 @@ img {
 .button-basic.button-spot {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 4px;
   min-width: 167px;
 
   padding: 10px 60px;
-  margin-left: 4px;
   font-weight: 700;
 
   transform: translateY(-50%);
@@ -1188,6 +1187,8 @@ img {
 
 .tariffs .standart-item,
 .tariffs .vip-item {
+  position: relative;
+
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -1198,13 +1199,28 @@ img {
   margin-bottom: 16px;
 }
 
+.standart-item::after {
+  position: absolute;
+  left: -16px;
+  bottom: -8px;
+
+  content: "";
+  display: block;
+  width: 341px;
+  height: 1px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
 .tariffs .standart-icon,
 .tariffs .vip-icon {
+  margin-top: 4px;
+
+  flex-shrink: 0;
   stroke: #ffffff;
 }
 
 .tariffs-text {
-  line-height: 1.25;
+  line-height: calc(20 / 16);
 
   color: #ffffff;
 }
@@ -1225,23 +1241,25 @@ img {
 
 .tariffs-price {
   position: relative;
-  display: inline-block;
+  /* display: flex;
+align-items: start;
+gap: 4px; */
+
   font-size: 35px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: calc(40 / 35);
   letter-spacing: -1.4px;
 
   color: #ffffff;
 }
 
-.tariffs-price::after {
-  content: "-35%";
+.tarrifs-discount {
   position: absolute;
   top: -1px;
-  right: -60%;
+  right: -47px;
 
   font-size: 18px;
-  line-height: 1.11;
+  line-height: calc(20 / 18);
   letter-spacing: -0.72px;
   text-transform: uppercase;
 
@@ -1254,9 +1272,9 @@ img {
 
   display: flex;
   align-items: center;
-  gap: 4px;
+  justify-content: space-between;
 
-  line-height: 1.25;
+  line-height: calc(20 / 16);
 
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1268,8 +1286,7 @@ img {
 }
 
 .tariffs-link {
-  padding: 8px 96px 8px 96px;
-  min-width: 310px;
+  padding: 8px 96px;
   display: block;
   text-align: center;
 
@@ -1286,7 +1303,7 @@ img {
 
 .tariffs-link > .text-try {
   font-weight: 500;
-  line-height: 1.25;
+  line-height: calc(20 / 16);
   text-transform: uppercase;
 
   color: #030718;
@@ -1294,7 +1311,7 @@ img {
 
 .tariffs-link > .text-free {
   font-size: 12px;
-  line-height: 1.33;
+  line-height: calc(16 / 12);
 
   color: rgba(3, 7, 24, 0.56);
 }
