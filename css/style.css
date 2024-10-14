@@ -1354,12 +1354,6 @@ gap: 4px; */
   }
 }
 
-.question-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
 .questions-item {
   padding: 16px;
 
@@ -1371,6 +1365,10 @@ gap: 4px; */
   .questions-item {
     max-width: 846px;
   }
+}
+
+.questions-item:not(:last-child){
+  margin-bottom: 12px;
 }
 
 .questions-item:not(:first-child) {
@@ -1408,7 +1406,7 @@ gap: 4px; */
 }
 
 .common-questions .text-first {
-  margin-top: 10px;
+  margin-top: 20px;
   display: block;
 }
 
@@ -1433,6 +1431,8 @@ gap: 4px; */
 .common-questions .questions-button {
   width: 24px;
   height: 24px;
+
+  flex-shrink: 0;
 }
 
 .questions-button.black {
