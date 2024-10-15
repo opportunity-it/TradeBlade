@@ -1367,7 +1367,7 @@ gap: 4px; */
   }
 }
 
-.questions-item:not(:last-child){
+.questions-item:not(:last-child) {
   margin-bottom: 12px;
 }
 
@@ -1446,8 +1446,10 @@ gap: 4px; */
 
 /* СТИЛІ ДЛЯ ФУТЕРА */
 .footer {
+  position: relative;
+
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1457,8 +1459,30 @@ gap: 4px; */
   }
 }
 
-.footer-container {
-  position: relative;
+.footer::before {
+  position: absolute;
+  left: 0;
+  top: 333px;
+  content: "";
+
+  height: 1px;
+  width: 100%;
+  display: block;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+
+  height: 5px;
+  width: 100%;
+  display: block;
+
+  background-color: #6a54ff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1469,7 +1493,7 @@ gap: 4px; */
 }
 
 .footer .text-link {
-  padding-bottom: 55px;
+  margin-bottom: 78px;
 
   display: flex;
   justify-content: space-between;
@@ -1484,7 +1508,6 @@ gap: 4px; */
 }
 
 .footer .link-icon {
-  padding-top: 22px;
   margin-bottom: 81px;
 
   display: block;
@@ -1494,19 +1517,6 @@ gap: 4px; */
   .footer .link-icon {
     padding-top: 0;
   }
-}
-
-.footer .link-icon::before {
-  position: absolute;
-  left: 0;
-  bottom: 226px;
-  content: "";
-
-  height: 1px;
-  width: 100%;
-  display: block;
-
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1519,7 +1529,7 @@ gap: 4px; */
   max-width: 107px;
 
   font-size: 14px;
-  line-height: 1.42;
+  line-height: calc(20 / 14);
   text-transform: uppercase;
 
   color: rgba(255, 255, 255, 0.4);
@@ -1531,7 +1541,7 @@ gap: 4px; */
   }
 }
 
-.footer .footer-list,
+.footer-list,
 .burger-list {
   display: flex;
   flex-direction: column;
@@ -1539,15 +1549,19 @@ gap: 4px; */
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .footer-list {
+  .footer-list {
     flex-direction: row;
   }
+}
+
+.footer .footer-list {
+  margin-right: 26px;
 }
 
 .footer-link,
 .burger-link {
   font-weight: 500;
-  line-height: 1.25;
+  line-height: calc(20 / 16);
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1569,22 +1583,9 @@ gap: 4px; */
 
 .copyright {
   font-size: 14px;
-  line-height: 1.42;
+  line-height: calc(20 / 14);
 
   color: rgba(255, 255, 255, 0.5);
-}
-
-.copyright::after {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  content: "";
-
-  height: 5px;
-  width: 100%;
-  display: block;
-
-  background-color: #6a54ff;
 }
 
 @media screen and (min-width: 1200px) {
