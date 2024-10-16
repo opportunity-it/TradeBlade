@@ -73,6 +73,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+   }
+}
+
 .text {
   line-height: calc(20 / 16);
 }
@@ -104,6 +110,12 @@ img {
   display: block;
   width: 107px;
   height: 52px;
+}
+
+@media screen and (min-width:1200px) {
+  .header-link{
+    width: 132px;height: 64px;
+  }
 }
 
 .header-icon {
@@ -213,14 +225,17 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header .nav-list {
-    margin-left: 129px;
+    margin-left: 65px;
 
     display: flex;
     gap: 32px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
+   .header .nav-list {
+    margin-left: 129px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
