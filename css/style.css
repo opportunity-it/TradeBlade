@@ -558,6 +558,8 @@ padding: 15px 23px;
   .profit .title-img {
     left: -80px;
     top: -115px;
+    outline: 1px solid red;
+    background-color: yellow;
   }
 }
 
