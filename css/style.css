@@ -719,7 +719,8 @@ padding: 15px 23px;
 @media screen and (min-width: 1200px) {
   .past-trades {
     padding-top: 96px;
-    padding-bottom: 178px;
+    padding-bottom: 118px;
+    margin-bottom: 60px;
 
     font-size: 44px;
     letter-spacing: -1.76px;
@@ -734,6 +735,12 @@ padding: 15px 23px;
   margin-bottom: 2px;
 
   color: #ffffff;
+}
+
+@media screen and (min-width:1200px) {
+  .trade-title {
+    margin-bottom: 4px;
+  }
 }
 
 .trade-status {
@@ -752,7 +759,7 @@ padding: 15px 23px;
 
 @media screen and (min-width: 1200px) {
   .trade-status {
-    margin-bottom: 73px;
+    margin-bottom: 72px;
   }
 }
 
