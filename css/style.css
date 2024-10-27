@@ -1268,14 +1268,26 @@ img {
 .standart-item::after,
 .vip-item::after {
   position: absolute;
-  left: -24px;
-  bottom: -9px;
+     bottom: -9px;
+  left: -16px;
+
+  width: 341px;
 
   content: "";
   display: block;
-  width: 412px;
+ 
   height: 1px;
   border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width:1200px) {
+  .standart-item::after,
+.vip-item::after {
+  left: -24px;
+  
+   width: 412px;
+
+}
 }
 
 .tariffs .standart-icon,
