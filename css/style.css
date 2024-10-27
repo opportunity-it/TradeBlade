@@ -10,6 +10,8 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  text-transform: uppercase;
 }
 
 .list {
@@ -249,7 +251,6 @@ img {
   font-size: 14px;
   font-weight: 500;
   line-height: calc(20 / 14);
-  text-transform: uppercase;
 }
 
 .button-enter {
@@ -498,7 +499,6 @@ img {
   font-size: 14px;
   font-weight: 500;
   line-height: calc(20 / 14);
-  text-transform: uppercase;
 
   transform: translateY(-50%);
 
@@ -1057,7 +1057,6 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(20 / 16);
-  text-transform: uppercase;
 
   color: #030718;
 
@@ -1106,11 +1105,9 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:1200px) {
   .tarrifs-title {
-    font-size: 44px;
-    line-height: 1.27;
-    letter-spacing: -1.76px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1137,7 +1134,6 @@ img {
   line-height: calc(24 / 18);
 
   letter-spacing: -0.72px;
-  text-transform: uppercase;
 
   text-align: end;
 
@@ -1156,7 +1152,7 @@ img {
     min-width: 413px;
 
     font-size: 24px;
-    line-height: 1.16;
+    line-height: calc(28/24);
     letter-spacing: -0.96px;
   }
 }
@@ -1178,7 +1174,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .button-basic.button-spot {
-    padding: 8px 74px 8px 66px;
+    padding: 8px 70px;
 
     min-width: 201px;
   }
@@ -1205,10 +1201,14 @@ img {
 
 @media screen and (min-width: 1200px) {
   .tariffs-item {
-    padding: 24px;
+    padding: 23px; 
 
     width: 413px;
-  }
+    height: 556px;
+
+    display: flex;
+    flex-direction: column;
+      }
 }
 
 .tariffs-item.vip {
@@ -1224,7 +1224,7 @@ img {
     margin-bottom: 56px;
 
     font-size: 32px;
-    line-height: 1.5;
+    line-height: calc(48/32);
     letter-spacing: -1.28px;
   }
 }
@@ -1235,7 +1235,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .tariffs .standart-list {
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
+    margin-bottom: auto;
   }
 }
 
@@ -1245,7 +1246,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .tariffs .vip-list {
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: auto;
   }
 }
 
@@ -1266,12 +1268,12 @@ img {
 .standart-item::after,
 .vip-item::after {
   position: absolute;
-  left: -16px;
+  left: -24px;
   bottom: -9px;
 
   content: "";
   display: block;
-  width: 341px;
+  width: 412px;
   height: 1px;
   border: 1px dashed rgba(255, 255, 255, 0.2);
 }
@@ -1296,12 +1298,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .tariffs .price-button {
-    margin-bottom: 24px;
-  }
 }
 
 .tariffs-price {
@@ -1340,6 +1336,7 @@ gap: 4px; */
   justify-content: space-between;
 
   line-height: calc(20 / 16);
+  text-transform: lowercase;
 
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1351,7 +1348,7 @@ gap: 4px; */
 }
 
 .tariffs-link {
-  padding: 8px 96px;
+  padding: 8px 94px;
   display: block;
   text-align: center;
 
