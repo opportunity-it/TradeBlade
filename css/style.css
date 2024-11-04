@@ -5,11 +5,13 @@
   --basic-font-weight: 500;
   --basic-font-size: 14px;
   --main-line-height: calc(20 / 16);
+  --basic-text-transform:uppercase;
 }
 
 /* ЗАГАЛЬНІ СТИЛІ  */
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  
   background-color: #030718;
 }
 
@@ -20,7 +22,7 @@ body {
   border: none;
   cursor: pointer;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 }
 
 .list {
@@ -45,7 +47,7 @@ p {
   line-height: calc(36 / 28);
   letter-spacing: -1.12px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: #000000;
 }
@@ -57,7 +59,7 @@ p {
     line-height: calc(56 / 44);
     letter-spacing: -1.76px;
 
-    text-transform: uppercase;
+    text-transform: var(--basic-text-transform);
   }
 }
 
@@ -237,7 +239,7 @@ img {
     font-size: var(--basic-font-size);
     font-weight: var(--basic-font-weight);
     line-height: calc(17 / 14);
-    text-transform: uppercase;
+    text-transform: var(--basic-text-transform);
 
     color: var(--main-color);
   }
@@ -365,7 +367,7 @@ img {
   line-height: calc(28 / 20);
   letter-spacing: -0.8px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 }
 
 .hero-cards .state {
@@ -388,7 +390,7 @@ img {
   font-weight: var(--basic-font-weight);
   line-height: calc(28 / 20);
   letter-spacing: -0.8px;
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 }
 
 .hero-cards .card-icon {
@@ -419,7 +421,7 @@ img {
   line-height: calc(44 / 35);
   letter-spacing: -1.4px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: var(--main-color);
 }
@@ -486,7 +488,7 @@ img {
   line-height: calc(20 / 14);
   letter-spacing: -0.14px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
   color: rgba(255, 255, 255, 0.34);
 }
 
@@ -596,7 +598,7 @@ img {
   left: 16px;
   bottom: 0;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 }
 
 @media screen and (min-width: 1200px) {
@@ -633,7 +635,7 @@ img {
 .profit-quality {
   margin-bottom: 4px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: rgba(0, 0, 0, 0.8);
 }
@@ -653,7 +655,7 @@ img {
   line-height: calc(39 / 35);
   letter-spacing: -0.7px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: var(--accent-color);
 }
@@ -836,7 +838,7 @@ img {
   line-height: calc(28 / 20);
   letter-spacing: -0.8px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: var(--main-color);
 }
@@ -868,7 +870,7 @@ img {
   line-height: calc(36 / 28);
   letter-spacing: -0.56px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: #35ff9e;
 }
@@ -880,7 +882,7 @@ img {
 .past-trades .trade-profit {
   margin-bottom: 2px;
 
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 }
 
 .past-trades .opacity-second {
@@ -1343,7 +1345,7 @@ gap: 4px; */
   font-size: 18px;
   line-height: calc(20 / 18);
   letter-spacing: -0.72px;
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: #35ff9e;
 }
@@ -1387,7 +1389,7 @@ gap: 4px; */
 .tariffs-link > .text-try {
   font-weight: var(--basic-font-weight);
   line-height: var(--main-line-height);
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: #030718;
 }
@@ -1617,7 +1619,7 @@ gap: 4px; */
 .footer-text {
   font-size: var(--basic-font-size);
   line-height: calc(20 / 14);
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: rgba(255, 255, 255, 0.4);
 }
@@ -1664,7 +1666,7 @@ gap: 4px; */
 .burger-link {
   font-weight: var(--basic-font-weight);
   line-height: var(--main-line-height);
-  text-transform: uppercase;
+  text-transform: var(--basic-text-transform);
 
   color: rgba(255, 255, 255, 0.5);
 }
