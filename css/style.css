@@ -307,6 +307,27 @@ img {
   margin-right: 53px;
 }
 
+/* animation  */
+.animation-img{
+  opacity: 0;
+  animation: scaling-img 2000ms linear 1000ms infinite alternate;
+}
+
+@keyframes scaling-img {
+  0%{
+opacity: 0.4;
+transform: scale(0.4);
+  }
+  50%{
+opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+transform: scale(1);
+  }
+}
+
+
 @media screen and (max-width: 1199px) {
   .hero-img {
     display: none;
@@ -324,6 +345,27 @@ img {
 @media screen and (min-width: 1200px) {
   .hero-cards {
     display: none;
+  }
+}
+
+.animation-cards{
+ animation: scaling-of-cards 2000ms linear 0ms infinite alternate ;
+}
+
+/* animation  */
+@keyframes scaling-of-cards{
+  0%{
+    opacity: 0.2;
+transform:scale(0.5)
+  }
+
+50%{
+opacity: 0.5;
+}
+
+  100%{
+opacity: 1;
+transform: scale(1);
   }
 }
 
