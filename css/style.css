@@ -349,7 +349,8 @@ transform: scale(1);
 }
 
 .animation-cards{
- animation: scaling-of-cards 2000ms linear 0ms infinite alternate ;
+  opacity: 0;
+ animation: scaling-of-cards 2000ms linear 1000ms infinite alternate ;
 }
 
 /* animation  */
